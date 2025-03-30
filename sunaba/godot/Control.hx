@@ -1,0 +1,161 @@
+package sunaba.godot;
+
+import sunaba.core.NativeEvent;
+
+class ControlClipChildren {
+    public static var Disabled: Int = 0;
+    public static var Only: Int = 1;
+    public static var AndDraw: Int = 2;
+    public static var Max: Int = 3;
+}
+
+class ControlTextureFilter {
+    public static var ParentNode: Int = 0;
+    public static var Nearest: Int = 1;
+    public static var Linear: Int = 2;
+    public static var NearestWithMipmaps: Int = 3;
+    public static var LinearWithMipmaps: Int = 4;
+    public static var NearestWithMipmapsAnisotropic: Int = 5;
+    public static var LinearWithMipmapsAnisotropic: Int = 6;
+    public static var Max: Int = 7;
+}
+
+class ControlTextureRepeat {
+    public static var ParentNode: Int = 0;
+    public static var Disabled: Int = 1;
+    public static var Enabled: Int = 2;
+    public static var Mirror: Int = 3;
+    public static var Max: Int = 4;
+}
+
+@:native("godot.Control")
+extern class Control extends CanvasItem {
+    public var anchorBottom: Float;
+    public var anchorLeft: Float;
+    public var anchorRight: Float;
+    public var anchorTop: Float;
+    public var autoTranslate: Bool;
+    public var clipContents: Bool;
+    public var customMinimumSize: Vector2;
+    public var focusMode: Int;
+    public var focusNeighborBottom: NodePath;
+    public var focusNeighborLeft: NodePath;
+    public var focusNeighborRight: NodePath;
+    public var focusNeighborTop: NodePath;
+    public var focusNext: NodePath;
+    public var focusPrevious: NodePath;
+    public var globalPosition: Vector2;
+    public var growHorizontal: Int;
+    public var growVertical: Int;
+    public var layoutDirection: Int;
+    public var localizeNumeralSystem: Bool;
+    public var mouseDefaultCursorShape: Int;
+    public var mouseFilter: Int;
+    public var mouseForcePassScrollEvents: Bool;
+    public var offsetBottom: Float;
+    public var offsetLeft: Float;
+    public var offsetRight: Float;
+    public var offsetTop: Float;
+    public var pivotOffset: Vector2;
+    public var position: Vector2;
+    public var rotation: Float;
+    public var rotationDegrees: Float;
+    public var scale: Vector2;
+    public var shortcutContext: Node;
+    public var size: Vector2;
+    public var sizeFlagsHorizontal: Int;
+    public var sizeFlagsStretchRatio: Float;
+    public var sizeFlagsVertical: Int;
+    public var theme: Theme;
+    public var themeTypeVariation: StringName;
+    public var tooltipAutoTranslateMode: Int;
+    public var tooltipText: String;
+    @:native("__new")
+    public function new();
+    public function acceptEvent(): Void;
+    public function addThemeColorOverride(name: StringName, color: Color): Void;
+    public function addThemeConstantOverride(name: StringName, constant: Int): Void;
+    public function addThemeFontOverride(name: StringName, font: Font): Void;
+    public function addThemeFontSizeOverride(name: StringName, fontSize: Int): Void;
+    public function addThemeIconOverride(name: StringName, texture: Texture2D): Void;
+    public function addThemeStyleboxOverride(name: StringName, stylebox: StyleBox): Void;
+    public function beginBulkThemeOverride(): Void;
+    public function endBulkThemeOverride(): Void;
+    public function findNextValidFocus(): Control;
+    public function findPrevValidFocus(): Control;
+    public function findValidFocusNeighbor(side: Int): Control;
+    public function forceDrag(data: Variant, preview: Control): Void;
+    public function getAnchor(side: Int): Float;
+    public function getBegin(): Vector2;
+    public function getCombinedMinimumSize(): Vector2;
+    public function getCursorShape(position: GdVector2): Int;
+    public function getEnd(): Vector2;
+    public function getFocusNeighbor(side: Int): NodePath;
+    public function getGlobalRect(): Rect2;
+    public function getMinimumSize(): Vector2;
+    public function getOffset(offset: Int): Float;
+    public function getParentAreaSize(): Vector2;
+    public function getParentControl(): Control;
+    public function getRect(): Rect2;
+    public function getScreenPosition(): Vector2;
+    public function getThemeColor(name: StringName, themeType: StringName): Color;
+    public function getThemeConstant(name: StringName, themeType: StringName): Int;
+    public function getThemeDefaultBaseScale(): Float;
+    public function getThemeDefaultFont(): Font;
+    public function getThemeDefaultFontSize(): Int;
+    public function getThemeFont(name: StringName, themeType: StringName): Font;
+    public function getThemeFontSize(name: StringName, themeType: StringName): Int;
+    public function getThemeIcon(name: StringName, themeType: StringName): Texture2D;
+    public function getThemeStylebox(name: StringName, themeType: StringName): StyleBox;
+    public function getTooltip(atPosition: GdVector2): String;
+    public function grabClickFocus(): Void;
+    public function grabFocus(): Void;
+    public function hasFocus(): Bool;
+    public function hasThemeColor(name: StringName, themeType: StringName): Bool;
+    public function hasThemeColorOverride(name: StringName): Bool;
+    public function hasThemeConstant(name: StringName, themeType: StringName): Bool;
+    public function hasThemeConstantOverride(name: StringName): Bool;
+    public function hasThemeFont(name: StringName, themeType: StringName): Bool;
+    public function hasThemeFontOverride(name: StringName): Bool;
+    public function hasThemeFontSize(name: StringName, themeType: StringName): Bool;
+    public function hasThemeFontSizeOverride(name: StringName): Bool;
+    public function hasThemeIcon(name: StringName, themeType: StringName): Bool;
+    public function hasThemeIconOverride(name: StringName): Bool;
+    public function hasThemeStylebox(name: StringName, themeType: StringName): Bool;
+    public function hasThemeStyleboxOverride(name: StringName): Bool;
+    public function isDragSuccessful(): Bool;
+    public function isLayoutRtl(): Bool;
+    public function releaseFocus(): Void;
+    public function removeThemeColorOverride(name: StringName): Void;
+    public function removeThemeConstantOverride(name: StringName): Void;
+    public function removeThemeFontOverride(name: StringName): Void;
+    public function removeThemeFontSizeOverride(name: StringName): Void;
+    public function removeThemeIconOverride(name: StringName): Void;
+    public function removeThemeStyleboxOverride(name: StringName): Void;
+    public function resetSize(): Void;
+    public function setAnchor(side: Int, anchor: Float, keepOffset: Bool = false, pushOppositeAnchor: Bool = true): Void;
+    public function setAnchorAndOffset(side: Int, anchor: Float, offset: Float, pushOppositeAnchor: Bool = false): Void;
+    public function setAnchorsAndOffsetsPreset(preset: Int, resizeMode: Int = 0, margin: Int = 0): Void;
+    public function setAnchorsPreset(preset: Int, keepOffsets: Bool = false): Void;
+    public function setBegin(position: GdVector2): Void;
+    public function setDragForwarding(dragFunc: Callable, canDropFunc: Callable, dropFunc: Callable): Void;
+    public function setDragPreview(control: Control): Void;
+    public function setEnd(position: GdVector2): Void;
+    public function setFocusNeighbor(side: Int, neighbor: NodePath): Void;
+    public function setGlobalPosition(position: GdVector2, keepOffsets: Bool = false): Void;
+    public function setOffset(side: Int, offset: Float): Void;
+    public function setOffsetsPreset(preset: Int, resizeMode: Int = 0, margin: Int = 0): Void;
+    public function setPosition(position: GdVector2, keepOffsets: Bool = false): Void;
+    public function setSize(size: GdVector2, keepOffsets: Bool = false): Void;
+    public function updateMinimumSize(): Void;
+    public function warpMouse(position: GdVector2): Void;
+    public var focusEntered: NativeEvent;
+    public var focusExited: NativeEvent;
+    public var guiInput: NativeEvent;
+    public var minimumSizeChanged: NativeEvent;
+    public var mouseEntered: NativeEvent;
+    public var mouseExited: NativeEvent;
+    public var resized: NativeEvent;
+    public var sizeFlagsChanged: NativeEvent;
+    public var themeChanged: NativeEvent;
+}

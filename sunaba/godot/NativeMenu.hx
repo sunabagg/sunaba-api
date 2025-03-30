@@ -1,0 +1,75 @@
+package sunaba.godot;
+
+import sunaba.core.NativeEvent;
+
+@:native("godot.NativeMenu")
+extern class NativeMenu extends Object {
+    @:native("__new")
+    public function new();
+    public function addCheckItem(rid: RID, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public function addIconCheckItem(rid: RID, icon: Texture2D, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public function addIconItem(rid: RID, icon: Texture2D, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public function addIconRadioCheckItem(rid: RID, icon: Texture2D, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public function addItem(rid: RID, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public function addMultistateItem(rid: RID, label: String, maxStates: Int, defaultState: Int, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public function addRadioCheckItem(rid: RID, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public function addSeparator(rid: RID, index: Int = -1): Int;
+    public function addSubmenuItem(rid: RID, label: String, submenuRid: RID, tag: Variant, index: Int = -1): Int;
+    public function clear(rid: RID): Void;
+    public function createMenu(): RID;
+    public function findItemIndexWithSubmenu(rid: RID, submenuRid: RID): Int;
+    public function findItemIndexWithTag(rid: RID, tag: Variant): Int;
+    public function findItemIndexWithText(rid: RID, text: String): Int;
+    public function freeMenu(rid: RID): Void;
+    public function getItemAccelerator(rid: RID, idx: Int): Int;
+    public function getItemCallback(rid: RID, idx: Int): Callable;
+    public function getItemCount(rid: RID): Int;
+    public function getItemIcon(rid: RID, idx: Int): Texture2D;
+    public function getItemIndentationLevel(rid: RID, idx: Int): Int;
+    public function getItemKeyCallback(rid: RID, idx: Int): Callable;
+    public function getItemMaxStates(rid: RID, idx: Int): Int;
+    public function getItemState(rid: RID, idx: Int): Int;
+    public function getItemSubmenu(rid: RID, idx: Int): RID;
+    public function getItemTag(rid: RID, idx: Int): Variant;
+    public function getItemText(rid: RID, idx: Int): String;
+    public function getItemTooltip(rid: RID, idx: Int): String;
+    public function getMinimumWidth(rid: RID): Float;
+    public function getPopupCloseCallback(rid: RID): Callable;
+    public function getPopupOpenCallback(rid: RID): Callable;
+    public function getSize(rid: RID): Vector2;
+    public function getSystemMenu(menuId: Int): RID;
+    public function getSystemMenuName(menuId: Int): String;
+    public function hasFeature(feature: Int): Bool;
+    public function hasMenu(rid: RID): Bool;
+    public function hasSystemMenu(menuId: Int): Bool;
+    public function isItemCheckable(rid: RID, idx: Int): Bool;
+    public function isItemChecked(rid: RID, idx: Int): Bool;
+    public function isItemDisabled(rid: RID, idx: Int): Bool;
+    public function isItemHidden(rid: RID, idx: Int): Bool;
+    public function isItemRadioCheckable(rid: RID, idx: Int): Bool;
+    public function isOpened(rid: RID): Bool;
+    public function isSystemMenu(rid: RID): Bool;
+    public function popup(rid: RID, position: GdVector2i): Void;
+    public function removeItem(rid: RID, idx: Int): Void;
+    public function setInterfaceDirection(rid: RID, isRtl: Bool): Void;
+    public function setItemAccelerator(rid: RID, idx: Int, keycode: Int): Void;
+    public function setItemCallback(rid: RID, idx: Int, callback: Callable): Void;
+    public function setItemCheckable(rid: RID, idx: Int, checkable: Bool): Void;
+    public function setItemChecked(rid: RID, idx: Int, checked: Bool): Void;
+    public function setItemDisabled(rid: RID, idx: Int, disabled: Bool): Void;
+    public function setItemHidden(rid: RID, idx: Int, hidden: Bool): Void;
+    public function setItemHoverCallbacks(rid: RID, idx: Int, callback: Callable): Void;
+    public function setItemIcon(rid: RID, idx: Int, icon: Texture2D): Void;
+    public function setItemIndentationLevel(rid: RID, idx: Int, level: Int): Void;
+    public function setItemKeyCallback(rid: RID, idx: Int, keyCallback: Callable): Void;
+    public function setItemMaxStates(rid: RID, idx: Int, maxStates: Int): Void;
+    public function setItemRadioCheckable(rid: RID, idx: Int, checkable: Bool): Void;
+    public function setItemState(rid: RID, idx: Int, state: Int): Void;
+    public function setItemSubmenu(rid: RID, idx: Int, submenuRid: RID): Void;
+    public function setItemTag(rid: RID, idx: Int, tag: Variant): Void;
+    public function setItemText(rid: RID, idx: Int, text: String): Void;
+    public function setItemTooltip(rid: RID, idx: Int, tooltip: String): Void;
+    public function setMinimumWidth(rid: RID, width: Float): Void;
+    public function setPopupCloseCallback(rid: RID, callback: Callable): Void;
+    public function setPopupOpenCallback(rid: RID, callback: Callable): Void;
+}
