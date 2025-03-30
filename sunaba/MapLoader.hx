@@ -4,7 +4,7 @@ import haxe.Constraints.Function;
 import sunaba.godot.Node;
 import sunaba.io.IoInterface;
 
-@:native("sunaba.MapLoader")
+@:native("gdx.MapLoader")
 extern class MapLoader {
     public static function createMapNode() : Node;
     public static function setTexturePath(path : String, funcGodotMap : Node, ioInterface : IoInterface) : Void;
