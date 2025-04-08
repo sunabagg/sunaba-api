@@ -9,5 +9,5 @@ extern class GdConvert {
     public static function deserializeVariable(obj: lua.Table<String, Any>): Any;
     public static function deserializeObject(obj: lua.Table<String, Any>): Object;
     public static function toJson(obj: Object): String;
-    public static function fromJson(obj: Object, json: String): Object;
+    public static function fromJson(json: String): Object;
 }
