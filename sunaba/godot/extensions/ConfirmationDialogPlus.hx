@@ -8,4 +8,5 @@ extern class ConfirmationDialogPlus {
     public var label : String;
     public var text : String;
     public function new(type : DialogPlusType);
+    public function setIcon(icon: Texture2D): Void;
 }

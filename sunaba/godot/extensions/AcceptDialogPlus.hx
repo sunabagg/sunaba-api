@@ -15,4 +15,5 @@ extern class AcceptDialogPlus extends AcceptDialog {
     public var label: Label;
     public var text: String;
     public function new(type : DialogPlusType);
+    public function setIcon(icon: Texture2D): Void;
 }
