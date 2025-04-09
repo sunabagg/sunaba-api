@@ -14,6 +14,7 @@ extern class AcceptDialogPlus extends AcceptDialog {
     public var type: DialogPlusType;
     public var label: Label;
     public var text: String;
+    @:native("__new")
     public function new(type : DialogPlusType);
     public function setIcon(icon: Texture2D): Void;
 }

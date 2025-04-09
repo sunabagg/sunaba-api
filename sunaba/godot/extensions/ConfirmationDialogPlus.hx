@@ -7,6 +7,7 @@ extern class ConfirmationDialogPlus {
     public var type : DialogPlusType;
     public var label : String;
     public var text : String;
+    @:native("__new")
     public function new(type : DialogPlusType);
     public function setIcon(icon: Texture2D): Void;
 }
