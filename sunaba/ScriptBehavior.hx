@@ -1,10 +1,10 @@
 package sunaba;
 
-import sunaba.godot.Node;
 import sunaba.godot.InputEvent;
+import sunaba.godot.extensions.ScriptNode;
 
 class ScriptBehavior {
-    public var node: Node;
+    public var node: ScriptNode;
 
     public function new() {}
 
