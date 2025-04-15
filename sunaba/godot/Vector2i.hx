@@ -25,7 +25,7 @@ abstract Vector2i(GdVector2i) from GdVector2i {
         }
     }
 
-    @:op(a.b) public function fieldWrite(name:String, value:String){
+    @:op(a.b) public function fieldWrite(name:String, value:Int){
         if (Reflect.hasField(this, name)) {
             Reflect.setField(this, name, value);
         } else {
