@@ -3,7 +3,7 @@ package sunaba.godot.extensions;
 import sunaba.godot.Node;
 import sunaba.ScriptBehavior;
 
-@:native("ScriptNode")
+@:native("gdx.ScriptNode")
 extern class ScriptNode extends Node {
     public var className: String;
     @:native("class")
