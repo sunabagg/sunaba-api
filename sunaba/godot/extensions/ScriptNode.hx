@@ -12,15 +12,25 @@ extern class ScriptNode extends Node {
     @:native("classInstance")
     public var instance: ScriptBehavior;
 
+    @:native("enterTree")
     public var onEnterTree: NativeEvent;
+    @:native("ready")
     public var onReady: NativeEvent;
+    @:native("process")
     public var onProcess: NativeEvent;
+    @:native("physicsProcess")
     public var onPhysicsProcess: NativeEvent;
+    @:native("input")
     public var onInput: NativeEvent;
+    @:native("unhandledInput")
     public var onUnhandledInput: NativeEvent;
+    @:native("shortcutInput")
     public var onShortcutInput: NativeEvent;
+    @:native("unhandledKeyInput")
     public var onUnhandledKeyInput: NativeEvent;
+    @:native("exitTree")
     public var onExitTree: NativeEvent;
+    @:native("notification")
     public var onNotification: NativeEvent;
 
     @:native("__new")
