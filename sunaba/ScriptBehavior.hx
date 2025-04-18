@@ -2,6 +2,7 @@ package sunaba;
 
 import sunaba.godot.InputEvent;
 import sunaba.godot.extensions.ScriptNode;
+import sunaba.core.LuaEvent;
 
 class ScriptBehavior {
     public var node: ScriptNode;
@@ -16,43 +17,43 @@ class ScriptBehavior {
         var enterTreeFunc = function() {
             s.enterTree();
         }
-        untyped __lua__("self.enterTree = enterTreeFunc");
+        LuaEvent.add(node.onEnterTree, enterTreeFunc);
         var readyFunc = function() {
             s.ready();
         }
-        untyped __lua__("self.ready = readyFunc");
+        LuaEvent.add(node.onReady, readyFunc);
         var processFunc = function(delta: Float) {
             s.process(delta);
         }
-        untyped __lua__("self.process = processFunc");
+        LuaEvent.add(node.onProcess, processFunc);
         var physicsProcessFunc = function(delta: Float) {
             s.physicsProcess(delta);
         }
-        untyped __lua__("self.physicsProcess = physicsProcessFunc");
+        LuaEvent.add(node.onPhysicsProcess, physicsProcessFunc);
         var inputFunc = function(event: InputEvent) {
             s.input(event);
         }
-        untyped __lua__("self.input = inputFunc");
+        LuaEvent.add(node.onInput, inputFunc);
         var unhandledInputFunc = function(event: InputEvent) {
             s.unhandledInput(event);
         }
-        untyped __lua__("self.unhandledInput = unhandledInputFunc");
+        LuaEvent.add(node.onUnhandledInput, unhandledInputFunc);
         var shortcutInputFunc = function(event: InputEvent) {
             s.shortcutInput(event);
         }
-        untyped __lua__("self.shortcutInput = shortcutInputFunc");
+        LuaEvent.add(node.onShortcutInput, shortcutInputFunc);
         var unhandledKeyInputFunc = function(event: InputEvent) {
             s.unhandledKeyInput(event);
         }
-        untyped __lua__("self.unhandledKeyInput = unhandledKeyInputFunc");
+        LuaEvent.add(node.onUnhandledKeyInput, unhandledKeyInputFunc);
         var exitTreeFunc = function() {
             s.exitTree();
         }
-        untyped __lua__("self.exitTree = exitTreeFunc");
+        LuaEvent.add(node.onExitTree, exitTreeFunc);
         var notificationFunc = function(what: Int) {
             s.notification(what);
         }
-        untyped __lua__("self.notification = notificationFunc");
+        LuaEvent.add(node.onNotification, notificationFunc);
 
     }
 
