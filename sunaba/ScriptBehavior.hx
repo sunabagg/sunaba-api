@@ -7,8 +7,11 @@ import sunaba.core.LuaEvent;
 class ScriptBehavior {
     public var node: ScriptNode;
 
-    public function new(n: ScriptNode) {
-        node = n;
+    public function new(nodeId: String) {
+        node = cast untyped __lua__(" _G[nodeId] ");
+        if (node == null) {
+            throw "ScriptBehavior: node is null";
+        }
         node.instance = this;
         // Hack fix to expose the methods to Lua
         // This is a workaround for the fact that we can't use @:expose on methods
@@ -25,27 +28,27 @@ class ScriptBehavior {
         var processFunc = function(delta: Float) {
             s.process(delta);
         }
-        LuaEvent.add(node.onProcess, processFunc);
+        node.processFunction = processFunc;
         var physicsProcessFunc = function(delta: Float) {
             s.physicsProcess(delta);
         }
-        LuaEvent.add(node.onPhysicsProcess, physicsProcessFunc);
+        node.physicsProcessFunction = physicsProcessFunc;
         var inputFunc = function(event: InputEvent) {
             s.input(event);
         }
-        LuaEvent.add(node.onInput, inputFunc);
+        node.inputFunction = inputFunc;
         var unhandledInputFunc = function(event: InputEvent) {
             s.unhandledInput(event);
         }
-        LuaEvent.add(node.onUnhandledInput, unhandledInputFunc);
+        node.unhandledInputFunction = unhandledInputFunc;
         var shortcutInputFunc = function(event: InputEvent) {
             s.shortcutInput(event);
         }
-        LuaEvent.add(node.onShortcutInput, shortcutInputFunc);
+        node.shortcutInputFunction = shortcutInputFunc;
         var unhandledKeyInputFunc = function(event: InputEvent) {
             s.unhandledKeyInput(event);
         }
-        LuaEvent.add(node.onUnhandledKeyInput, unhandledKeyInputFunc);
+        node.unhandledKeyInputFunction = unhandledKeyInputFunc;
         var exitTreeFunc = function() {
             s.exitTree();
         }
@@ -53,7 +56,7 @@ class ScriptBehavior {
         var notificationFunc = function(what: Int) {
             s.notification(what);
         }
-        LuaEvent.add(node.onNotification, notificationFunc);
+        node.notificationFunction = notificationFunc;
 
     }
 

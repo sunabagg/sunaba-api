@@ -1,5 +1,6 @@
 package sunaba.godot.extensions;
 
+import haxe.Constraints.Function;
 import sunaba.godot.Node;
 import sunaba.ScriptBehavior;
 import sunaba.core.NativeEvent;
@@ -12,26 +13,41 @@ extern class ScriptNode extends Node {
     @:native("classInstance")
     public var instance: ScriptBehavior;
 
-    @:native("enterTree")
+    @:native("EnterTree")
     public var onEnterTree: NativeEvent;
-    @:native("ready")
+    @:native("Ready")
     public var onReady: NativeEvent;
-    @:native("process")
+    @:native("Process")
     public var onProcess: NativeEvent;
-    @:native("physicsProcess")
+    @:native("PhysicsProcess")
     public var onPhysicsProcess: NativeEvent;
-    @:native("input")
+    @:native("Input")
     public var onInput: NativeEvent;
-    @:native("unhandledInput")
+    @:native("UnhandledInput")
     public var onUnhandledInput: NativeEvent;
-    @:native("shortcutInput")
+    @:native("ShortcutInput")
     public var onShortcutInput: NativeEvent;
-    @:native("unhandledKeyInput")
+    @:native("UnhandledKeyInput")
     public var onUnhandledKeyInput: NativeEvent;
-    @:native("exitTree")
+    @:native("ExitTree")
     public var onExitTree: NativeEvent;
-    @:native("notification")
+    @:native("Notification")
     public var onNotification: NativeEvent;
+    
+    @:native("ProcessFunction")
+    public var processFunction: Function;
+    @:native("PhysicsProcessFunction")
+    public var physicsProcessFunction: Function;
+    @:native("InputFunction")
+    public var inputFunction: Function;
+    @:native("UnhandledInputFunction")
+    public var unhandledInputFunction: Function;
+    @:native("ShortcutInputFunction")
+    public var shortcutInputFunction: Function;
+    @:native("UnhandledKeyInputFunction")
+    public var unhandledKeyInputFunction: Function;
+    @:native("NotificationFunction")
+    public var notificationFunction: Function;
 
     @:native("__new")
     public function new(_cName: String = "");
