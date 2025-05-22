@@ -343,8 +343,10 @@ public class HaxeExternGenerator
                             if (paramName == "default" || paramName == "class" || paramName == "var")
                                 paramName = "_" + paramName;
                             if (paramType == "string" || paramType == "int" || paramType == "float" || paramType == "bool")
+                            {
                                 if (paramDefault != null)
                                     return $"{ToCamelCase(paramName)}: {MapType(paramType)} = {paramDefault}";
+                            }
                             else if (paramDefault != null)
                                 return $"?{ToCamelCase(paramName)}: {MapType(paramType)}";
                             return $"{ToCamelCase(paramName)}: {MapType(paramType)}";
@@ -424,8 +426,12 @@ public class HaxeExternGenerator
             if (paramDefault == "4294967295")
                 paramDefault = "cast 4294967295";
             if (paramType == "string" || paramType == "int" || paramType == "float" || paramType == "bool")
+            {
                 if (paramDefault != null)
                     return $"{ToCamelCase(paramName)}: {MapType(paramType)} = {paramDefault}";
+            }
+            else if (paramDefault != null)
+                return $"?{ToCamelCase(paramName)}: {MapType(paramType)}";
             return $"{ToCamelCase(paramName)}: {MapType(paramType)}";
         });
 
