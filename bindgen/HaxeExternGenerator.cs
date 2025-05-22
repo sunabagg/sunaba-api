@@ -345,6 +345,8 @@ public class HaxeExternGenerator
                             if (paramType == "string" || paramType == "int" || paramType == "float" || paramType == "bool")
                                 if (paramDefault != null)
                                     return $"{ToCamelCase(paramName)}: {MapType(paramType)} = {paramDefault}";
+                            else if (paramDefault != null)
+                                return $"?{ToCamelCase(paramName)}: {MapType(paramType)}";
                             return $"{ToCamelCase(paramName)}: {MapType(paramType)}";
                         });
 
