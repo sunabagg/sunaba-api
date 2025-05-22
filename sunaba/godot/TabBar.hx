@@ -95,7 +95,7 @@ extern class TabBar extends Control {
     public var tabsRearrangeGroup: Int;
     @:native("__new")
     public function new();
-    public function addTab(title: String, icon: Texture2D): Void;
+    public function addTab(?title: String, ?icon: Texture2D): Void;
     public function clearTabs(): Void;
     public function ensureTabVisible(idx: Int): Void;
     public function getOffsetButtonsVisible(): Bool;

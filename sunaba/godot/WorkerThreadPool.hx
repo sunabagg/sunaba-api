@@ -6,8 +6,8 @@ import sunaba.core.NativeEvent;
 extern class WorkerThreadPool extends Object {
     @:native("__new")
     public function new();
-    public function addGroupTask(action: Callable, elements: Int, tasksNeeded: Int = -1, highPriority: Bool = false, description: String): Int;
-    public function addTask(action: Callable, highPriority: Bool = false, description: String): Int;
+    public function addGroupTask(action: Callable, elements: Int, tasksNeeded: Int = -1, highPriority: Bool = false, ?description: String): Int;
+    public function addTask(action: Callable, highPriority: Bool = false, ?description: String): Int;
     public function getGroupProcessedElementCount(groupId: Int): Int;
     public function isGroupTaskCompleted(groupId: Int): Bool;
     public function isTaskCompleted(taskId: Int): Bool;

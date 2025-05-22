@@ -9,5 +9,5 @@ extern class PCKPacker extends RefCounted {
     public function addFile(targetPath: String, sourcePath: String, encrypt: Bool = false): Int;
     public function addFileRemoval(targetPath: String): Int;
     public function flush(verbose: Bool = false): Int;
-    public function pckStart(pckPath: String, alignment: Int = 32, key: String, encryptDirectory: Bool = false): Int;
+    public function pckStart(pckPath: String, alignment: Int = 32, ?key: String, encryptDirectory: Bool = false): Int;
 }

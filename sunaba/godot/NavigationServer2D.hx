@@ -39,8 +39,8 @@ extern class NavigationServer2D extends Object {
     public function agentSetTimeHorizonObstacles(agent: RID, timeHorizon: Float): Void;
     public function agentSetVelocity(agent: RID, velocity: GdVector2): Void;
     public function agentSetVelocityForced(agent: RID, velocity: GdVector2): Void;
-    public function bakeFromSourceGeometryData(navigationPolygon: NavigationPolygon, sourceGeometryData: NavigationMeshSourceGeometryData2D, callback: Callable): Void;
-    public function bakeFromSourceGeometryDataAsync(navigationPolygon: NavigationPolygon, sourceGeometryData: NavigationMeshSourceGeometryData2D, callback: Callable): Void;
+    public function bakeFromSourceGeometryData(navigationPolygon: NavigationPolygon, sourceGeometryData: NavigationMeshSourceGeometryData2D, ?callback: Callable): Void;
+    public function bakeFromSourceGeometryDataAsync(navigationPolygon: NavigationPolygon, sourceGeometryData: NavigationMeshSourceGeometryData2D, ?callback: Callable): Void;
     public function freeRid(rid: RID): Void;
     public function getDebugEnabled(): Bool;
     public function getMaps(): Dynamic;
@@ -104,8 +104,8 @@ extern class NavigationServer2D extends Object {
     public function obstacleSetRadius(obstacle: RID, radius: Float): Void;
     public function obstacleSetVelocity(obstacle: RID, velocity: GdVector2): Void;
     public function obstacleSetVertices(obstacle: RID, vertices: PackedVector2Array): Void;
-    public function parseSourceGeometryData(navigationPolygon: NavigationPolygon, sourceGeometryData: NavigationMeshSourceGeometryData2D, rootNode: Node, callback: Callable): Void;
-    public function queryPath(parameters: NavigationPathQueryParameters2D, result: NavigationPathQueryResult2D, callback: Callable): Void;
+    public function parseSourceGeometryData(navigationPolygon: NavigationPolygon, sourceGeometryData: NavigationMeshSourceGeometryData2D, rootNode: Node, ?callback: Callable): Void;
+    public function queryPath(parameters: NavigationPathQueryParameters2D, result: NavigationPathQueryResult2D, ?callback: Callable): Void;
     public function regionCreate(): RID;
     public function regionGetBounds(region: RID): Rect2;
     public function regionGetClosestPoint(region: RID, toPoint: GdVector2): Vector2;

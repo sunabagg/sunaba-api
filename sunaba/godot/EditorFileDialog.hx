@@ -16,9 +16,9 @@ extern class EditorFileDialog extends ConfirmationDialog {
     public var showHiddenFiles: Bool;
     @:native("__new")
     public function new();
-    public function addFilter(filter: String, description: String): Void;
+    public function addFilter(filter: String, ?description: String): Void;
     public function addOption(name: String, values: PackedStringArray, defaultValueIndex: Int): Void;
-    public function addSideMenu(menu: Control, title: String): Void;
+    public function addSideMenu(menu: Control, ?title: String): Void;
     public function clearFilenameFilter(): Void;
     public function clearFilters(): Void;
     public function getFilenameFilter(): String;

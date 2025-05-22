@@ -43,8 +43,8 @@ extern class NavigationServer3D extends Object {
     public function agentSetUse3dAvoidance(agent: RID, enabled: Bool): Void;
     public function agentSetVelocity(agent: RID, velocity: GdVector3): Void;
     public function agentSetVelocityForced(agent: RID, velocity: GdVector3): Void;
-    public function bakeFromSourceGeometryData(navigationMesh: NavigationMesh, sourceGeometryData: NavigationMeshSourceGeometryData3D, callback: Callable): Void;
-    public function bakeFromSourceGeometryDataAsync(navigationMesh: NavigationMesh, sourceGeometryData: NavigationMeshSourceGeometryData3D, callback: Callable): Void;
+    public function bakeFromSourceGeometryData(navigationMesh: NavigationMesh, sourceGeometryData: NavigationMeshSourceGeometryData3D, ?callback: Callable): Void;
+    public function bakeFromSourceGeometryDataAsync(navigationMesh: NavigationMesh, sourceGeometryData: NavigationMeshSourceGeometryData3D, ?callback: Callable): Void;
     public function freeRid(rid: RID): Void;
     public function getDebugEnabled(): Bool;
     public function getMaps(): Dynamic;
@@ -121,8 +121,8 @@ extern class NavigationServer3D extends Object {
     public function obstacleSetUse3dAvoidance(obstacle: RID, enabled: Bool): Void;
     public function obstacleSetVelocity(obstacle: RID, velocity: GdVector3): Void;
     public function obstacleSetVertices(obstacle: RID, vertices: PackedVector3Array): Void;
-    public function parseSourceGeometryData(navigationMesh: NavigationMesh, sourceGeometryData: NavigationMeshSourceGeometryData3D, rootNode: Node, callback: Callable): Void;
-    public function queryPath(parameters: NavigationPathQueryParameters3D, result: NavigationPathQueryResult3D, callback: Callable): Void;
+    public function parseSourceGeometryData(navigationMesh: NavigationMesh, sourceGeometryData: NavigationMeshSourceGeometryData3D, rootNode: Node, ?callback: Callable): Void;
+    public function queryPath(parameters: NavigationPathQueryParameters3D, result: NavigationPathQueryResult3D, ?callback: Callable): Void;
     public function regionBakeNavigationMesh(navigationMesh: NavigationMesh, rootNode: Node): Void;
     public function regionCreate(): RID;
     public function regionGetBounds(region: RID): AABB;

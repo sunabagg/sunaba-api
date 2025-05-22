@@ -19,5 +19,5 @@ extern class InputEvent extends Resource {
     public function isMatch(event: InputEvent, exactMatch: Bool = true): Bool;
     public function isPressed(): Bool;
     public function isReleased(): Bool;
-    public function xformedBy(xform: Transform2D, localOfs: GdVector2): InputEvent;
+    public function xformedBy(xform: Transform2D, ?localOfs: GdVector2): InputEvent;
 }

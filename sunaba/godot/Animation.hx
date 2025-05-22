@@ -27,7 +27,7 @@ extern class Animation extends Resource {
     public function bezierTrackGetKeyInHandle(trackIdx: Int, keyIdx: Int): Vector2;
     public function bezierTrackGetKeyOutHandle(trackIdx: Int, keyIdx: Int): Vector2;
     public function bezierTrackGetKeyValue(trackIdx: Int, keyIdx: Int): Float;
-    public function bezierTrackInsertKey(trackIdx: Int, time: Float, value: Float, inHandle: GdVector2, outHandle: GdVector2): Int;
+    public function bezierTrackInsertKey(trackIdx: Int, time: Float, value: Float, ?inHandle: GdVector2, ?outHandle: GdVector2): Int;
     public function bezierTrackInterpolate(trackIdx: Int, time: Float): Float;
     public function bezierTrackSetKeyInHandle(trackIdx: Int, keyIdx: Int, inHandle: GdVector2, balancedValueTimeRatio: Float = 1.0): Void;
     public function bezierTrackSetKeyOutHandle(trackIdx: Int, keyIdx: Int, outHandle: GdVector2, balancedValueTimeRatio: Float = 1.0): Void;

@@ -7,7 +7,7 @@ import sunaba.core.NativeObject;
 extern class Object extends NativeObject {
     @:native("__new")
     public function new();
-    public function addUserSignal(signal: String, arguments: Array<Dynamic>): Void;
+    public function addUserSignal(signal: String, ?arguments: Array<Dynamic>): Void;
     public function call(method: StringName): Variant;
     public function callDeferred(method: StringName): Variant;
     public function callv(method: StringName, argArray: Array<Dynamic>): Variant;
@@ -22,7 +22,7 @@ extern class Object extends NativeObject {
     public function getIncomingConnections(): Dynamic;
     public function getIndexed(propertyPath: NodePath): Variant;
     public function getInstanceId(): Int;
-    public function getMeta(name: StringName, Default: Variant): Variant;
+    public function getMeta(name: StringName, ?Default: Variant): Variant;
     public function getMetaList(): Dynamic;
     public function getMethodArgumentCount(method: StringName): Int;
     public function getMethodList(): Dynamic;
@@ -55,8 +55,8 @@ extern class Object extends NativeObject {
     public function setScript(script: Variant): Void;
     public function setTranslationDomain(domain: StringName): Void;
     public function toString(): String;
-    public function tr(message: StringName, context: StringName): String;
-    public function trN(message: StringName, pluralMessage: StringName, n: Int, context: StringName): String;
+    public function tr(message: StringName, ?context: StringName): String;
+    public function trN(message: StringName, pluralMessage: StringName, n: Int, ?context: StringName): String;
     public var propertyListChanged: NativeEvent;
     public var scriptChanged: NativeEvent;
 }

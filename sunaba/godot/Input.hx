@@ -46,7 +46,7 @@ extern class Input extends Object {
     public static function parseInputEvent(event: InputEvent): Void;
     public static function removeJoyMapping(guid: String): Void;
     public static function setAccelerometer(value: GdVector3): Void;
-    public static function setCustomMouseCursor(image: Resource, shape: Int = 0, hotspot: GdVector2): Void;
+    public static function setCustomMouseCursor(image: Resource, shape: Int = 0, ?hotspot: GdVector2): Void;
     public static function setDefaultCursorShape(shape: Int = 0): Void;
     public static function setGravity(value: GdVector3): Void;
     public static function setGyroscope(value: GdVector3): Void;

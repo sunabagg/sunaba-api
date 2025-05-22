@@ -31,7 +31,7 @@ extern class Transform2D extends NativeObject {
     public function isConformal(): Bool;
     public function isEqualApprox(xform: Transform2D): Bool;
     public function isFinite(): Bool;
-    public function lookingAt(target: GdVector2): Transform2D;
+    public function lookingAt(?target: GdVector2): Transform2D;
     public function orthonormalized(): Transform2D;
     public function rotated(angle: Float): Transform2D;
     public function rotatedLocal(angle: Float): Transform2D;

@@ -862,7 +862,7 @@ extern class ProjectSettings extends Object {
     public function clear(name: String): Void;
     public function getGlobalClassList(): Dynamic;
     public function getOrder(name: String): Int;
-    public function getSetting(name: String, defaultValue: Variant): Variant;
+    public function getSetting(name: String, ?defaultValue: Variant): Variant;
     public function getSettingWithOverride(name: StringName): Variant;
     public function globalizePath(path: String): String;
     public function hasSetting(name: String): Bool;

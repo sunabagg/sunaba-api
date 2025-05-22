@@ -9,7 +9,7 @@ extern class ImmediateMesh extends Mesh {
     public function clearSurfaces(): Void;
     public function surfaceAddVertex(vertex: GdVector3): Void;
     public function surfaceAddVertex2d(vertex: GdVector2): Void;
-    public function surfaceBegin(primitive: Int, material: Material): Void;
+    public function surfaceBegin(primitive: Int, ?material: Material): Void;
     public function surfaceEnd(): Void;
     public function surfaceSetColor(color: Color): Void;
     public function surfaceSetNormal(normal: GdVector3): Void;

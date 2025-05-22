@@ -14,7 +14,7 @@ extern class EditorUndoRedoManager extends Object {
     public function addUndoReference(object: Object): Void;
     public function clearHistory(id: Int = -99, increaseVersion: Bool = true): Void;
     public function commitAction(execute: Bool = true): Void;
-    public function createAction(name: String, mergeMode: Int = 0, customContext: Object, backwardUndoOps: Bool = false): Void;
+    public function createAction(name: String, mergeMode: Int = 0, ?customContext: Object, backwardUndoOps: Bool = false): Void;
     public function forceFixedHistory(): Void;
     public function getHistoryUndoRedo(id: Int): UndoRedo;
     public function getObjectHistoryId(object: Object): Int;

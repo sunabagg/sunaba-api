@@ -22,7 +22,7 @@ extern class CharacterBody2D extends PhysicsBody2D {
     @:native("__new")
     public function new();
     public function applyFloorSnap(): Void;
-    public function getFloorAngle(upDirection: GdVector2): Float;
+    public function getFloorAngle(?upDirection: GdVector2): Float;
     public function getFloorNormal(): Vector2;
     public function getLastMotion(): Vector2;
     public function getLastSlideCollision(): KinematicCollision2D;

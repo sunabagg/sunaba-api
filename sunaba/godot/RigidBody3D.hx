@@ -30,12 +30,12 @@ extern class RigidBody3D extends PhysicsBody3D {
     @:native("__new")
     public function new();
     public function addConstantCentralForce(force: GdVector3): Void;
-    public function addConstantForce(force: GdVector3, position: GdVector3): Void;
+    public function addConstantForce(force: GdVector3, ?position: GdVector3): Void;
     public function addConstantTorque(torque: GdVector3): Void;
     public function applyCentralForce(force: GdVector3): Void;
     public function applyCentralImpulse(impulse: GdVector3): Void;
-    public function applyForce(force: GdVector3, position: GdVector3): Void;
-    public function applyImpulse(impulse: GdVector3, position: GdVector3): Void;
+    public function applyForce(force: GdVector3, ?position: GdVector3): Void;
+    public function applyImpulse(impulse: GdVector3, ?position: GdVector3): Void;
     public function applyTorque(torque: GdVector3): Void;
     public function applyTorqueImpulse(impulse: GdVector3): Void;
     public function getCollidingBodies(): Dynamic;

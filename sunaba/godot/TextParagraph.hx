@@ -20,15 +20,15 @@ extern class TextParagraph extends RefCounted {
     @:native("__new")
     public function new();
     public function addObject(key: Variant, size: GdVector2, inlineAlign: Int = 5, length: Int = 1, baseline: Float = 0.0): Bool;
-    public function addString(text: String, font: Font, fontSize: Int, language: String, meta: Variant): Bool;
+    public function addString(text: String, font: Font, fontSize: Int, ?language: String, ?meta: Variant): Bool;
     public function clear(): Void;
     public function clearDropcap(): Void;
-    public function draw(canvas: RID, pos: GdVector2, color: Color, dcColor: Color): Void;
-    public function drawDropcap(canvas: RID, pos: GdVector2, color: Color): Void;
-    public function drawDropcapOutline(canvas: RID, pos: GdVector2, outlineSize: Int = 1, color: Color): Void;
-    public function drawLine(canvas: RID, pos: GdVector2, line: Int, color: Color): Void;
-    public function drawLineOutline(canvas: RID, pos: GdVector2, line: Int, outlineSize: Int = 1, color: Color): Void;
-    public function drawOutline(canvas: RID, pos: GdVector2, outlineSize: Int = 1, color: Color, dcColor: Color): Void;
+    public function draw(canvas: RID, pos: GdVector2, ?color: Color, ?dcColor: Color): Void;
+    public function drawDropcap(canvas: RID, pos: GdVector2, ?color: Color): Void;
+    public function drawDropcapOutline(canvas: RID, pos: GdVector2, outlineSize: Int = 1, ?color: Color): Void;
+    public function drawLine(canvas: RID, pos: GdVector2, line: Int, ?color: Color): Void;
+    public function drawLineOutline(canvas: RID, pos: GdVector2, line: Int, outlineSize: Int = 1, ?color: Color): Void;
+    public function drawOutline(canvas: RID, pos: GdVector2, outlineSize: Int = 1, ?color: Color, ?dcColor: Color): Void;
     public function getDropcapLines(): Int;
     public function getDropcapRid(): RID;
     public function getDropcapSize(): Vector2;
@@ -49,6 +49,6 @@ extern class TextParagraph extends RefCounted {
     public function hitTest(coords: GdVector2): Int;
     public function resizeObject(key: Variant, size: GdVector2, inlineAlign: Int = 5, baseline: Float = 0.0): Bool;
     public function setBidiOverride(override: Array<Dynamic>): Void;
-    public function setDropcap(text: String, font: Font, fontSize: Int, dropcapMargins: Rect2, language: String): Bool;
+    public function setDropcap(text: String, font: Font, fontSize: Int, ?dropcapMargins: Rect2, ?language: String): Bool;
     public function tabAlign(tabStops: PackedFloat32Array): Void;
 }

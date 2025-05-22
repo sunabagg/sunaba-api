@@ -14,6 +14,6 @@ extern class TileMapPattern extends Resource {
     public function hasCell(coords: GdVector2i): Bool;
     public function isEmpty(): Bool;
     public function removeCell(coords: GdVector2i, updateSize: Bool): Void;
-    public function setCell(coords: GdVector2i, sourceId: Int = -1, atlasCoords: GdVector2i, alternativeTile: Int = -1): Void;
+    public function setCell(coords: GdVector2i, sourceId: Int = -1, ?atlasCoords: GdVector2i, alternativeTile: Int = -1): Void;
     public function setSize(size: GdVector2i): Void;
 }

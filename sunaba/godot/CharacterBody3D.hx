@@ -22,7 +22,7 @@ extern class CharacterBody3D extends PhysicsBody3D {
     @:native("__new")
     public function new();
     public function applyFloorSnap(): Void;
-    public function getFloorAngle(upDirection: GdVector3): Float;
+    public function getFloorAngle(?upDirection: GdVector3): Float;
     public function getFloorNormal(): Vector3;
     public function getLastMotion(): Vector3;
     public function getLastSlideCollision(): KinematicCollision3D;

@@ -6,15 +6,15 @@ import sunaba.core.NativeEvent;
 extern class NativeMenu extends Object {
     @:native("__new")
     public function new();
-    public function addCheckItem(rid: RID, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
-    public function addIconCheckItem(rid: RID, icon: Texture2D, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
-    public function addIconItem(rid: RID, icon: Texture2D, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
-    public function addIconRadioCheckItem(rid: RID, icon: Texture2D, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
-    public function addItem(rid: RID, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
-    public function addMultistateItem(rid: RID, label: String, maxStates: Int, defaultState: Int, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
-    public function addRadioCheckItem(rid: RID, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public function addCheckItem(rid: RID, label: String, ?callback: Callable, ?keyCallback: Callable, ?tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public function addIconCheckItem(rid: RID, icon: Texture2D, label: String, ?callback: Callable, ?keyCallback: Callable, ?tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public function addIconItem(rid: RID, icon: Texture2D, label: String, ?callback: Callable, ?keyCallback: Callable, ?tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public function addIconRadioCheckItem(rid: RID, icon: Texture2D, label: String, ?callback: Callable, ?keyCallback: Callable, ?tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public function addItem(rid: RID, label: String, ?callback: Callable, ?keyCallback: Callable, ?tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public function addMultistateItem(rid: RID, label: String, maxStates: Int, defaultState: Int, ?callback: Callable, ?keyCallback: Callable, ?tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public function addRadioCheckItem(rid: RID, label: String, ?callback: Callable, ?keyCallback: Callable, ?tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
     public function addSeparator(rid: RID, index: Int = -1): Int;
-    public function addSubmenuItem(rid: RID, label: String, submenuRid: RID, tag: Variant, index: Int = -1): Int;
+    public function addSubmenuItem(rid: RID, label: String, submenuRid: RID, ?tag: Variant, index: Int = -1): Int;
     public function clear(rid: RID): Void;
     public function createMenu(): RID;
     public function findItemIndexWithSubmenu(rid: RID, submenuRid: RID): Int;

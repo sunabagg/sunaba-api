@@ -18,7 +18,7 @@ extern class FileDialog extends ConfirmationDialog {
     public var useNativeDialog: Bool;
     @:native("__new")
     public function new();
-    public function addFilter(filter: String, description: String): Void;
+    public function addFilter(filter: String, ?description: String): Void;
     public function addOption(name: String, values: PackedStringArray, defaultValueIndex: Int): Void;
     public function clearFilenameFilter(): Void;
     public function clearFilters(): Void;

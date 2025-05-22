@@ -25,7 +25,7 @@ extern class SceneTree extends MainLoop {
     public function createTween(): Tween;
     public function getFirstNodeInGroup(group: StringName): Node;
     public function getFrame(): Int;
-    public function getMultiplayer(forPath: NodePath): MultiplayerAPI;
+    public function getMultiplayer(?forPath: NodePath): MultiplayerAPI;
     public function getNodeCount(): Int;
     public function getNodeCountInGroup(group: StringName): Int;
     public function getNodesInGroup(group: StringName): Dynamic;
@@ -38,7 +38,7 @@ extern class SceneTree extends MainLoop {
     public function reloadCurrentScene(): Int;
     public function setGroup(group: StringName, property: String, value: Variant): Void;
     public function setGroupFlags(callFlags: Int, group: StringName, property: String, value: Variant): Void;
-    public function setMultiplayer(multiplayer: MultiplayerAPI, rootPath: NodePath): Void;
+    public function setMultiplayer(multiplayer: MultiplayerAPI, ?rootPath: NodePath): Void;
     public function unloadCurrentScene(): Void;
     public var nodeAdded: NativeEvent;
     public var nodeConfigurationWarningChanged: NativeEvent;

@@ -14,5 +14,5 @@ extern class PhysicsRayQueryParameters3D extends RefCounted {
     public var to: Vector3;
     @:native("__new")
     public function new();
-    public static function create(from: GdVector3, to: GdVector3, collisionMask: Int = cast 4294967295, exclude: Dynamic): PhysicsRayQueryParameters3D;
+    public static function create(from: GdVector3, to: GdVector3, collisionMask: Int = cast 4294967295, ?exclude: Dynamic): PhysicsRayQueryParameters3D;
 }

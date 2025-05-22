@@ -11,9 +11,9 @@ extern class EditorDebuggerSession extends RefCounted {
     public function isBreaked(): Bool;
     public function isDebuggable(): Bool;
     public function removeSessionTab(control: Control): Void;
-    public function sendMessage(message: String, data: Array<Dynamic>): Void;
+    public function sendMessage(message: String, ?data: Array<Dynamic>): Void;
     public function setBreakpoint(path: String, line: Int, enabled: Bool): Void;
-    public function toggleProfiler(profiler: String, enable: Bool, data: Array<Dynamic>): Void;
+    public function toggleProfiler(profiler: String, enable: Bool, ?data: Array<Dynamic>): Void;
     public var breaked: NativeEvent;
     public var continued: NativeEvent;
     public var started: NativeEvent;

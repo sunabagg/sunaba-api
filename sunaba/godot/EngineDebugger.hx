@@ -19,7 +19,7 @@ extern class EngineDebugger extends Object {
     public function isSkippingBreakpoints(): Bool;
     public function linePoll(): Void;
     public function profilerAddFrameData(name: StringName, data: Array<Dynamic>): Void;
-    public function profilerEnable(name: StringName, enable: Bool, arguments: Array<Dynamic>): Void;
+    public function profilerEnable(name: StringName, enable: Bool, ?arguments: Array<Dynamic>): Void;
     public function registerMessageCapture(name: StringName, callable: Callable): Void;
     public function registerProfiler(name: StringName, profiler: EngineProfiler): Void;
     public function removeBreakpoint(line: Int, source: StringName): Void;

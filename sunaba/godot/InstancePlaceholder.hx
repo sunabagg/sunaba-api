@@ -38,7 +38,7 @@ class InstancePlaceholderAutoTranslateMode {
 extern class InstancePlaceholder extends Node {
     @:native("__new")
     public function new();
-    public function createInstance(replace: Bool = false, customScene: PackedScene): Node;
+    public function createInstance(replace: Bool = false, ?customScene: PackedScene): Node;
     public function getInstancePath(): String;
     public function getStoredValues(withOrder: Bool = false): Map<Dynamic, Dynamic>;
 }

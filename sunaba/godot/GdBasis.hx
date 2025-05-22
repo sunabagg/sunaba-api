@@ -28,7 +28,7 @@ extern class GdBasis extends NativeObject {
     public function isConformal(): Bool;
     public function isEqualApprox(b: GdBasis): Bool;
     public function isFinite(): Bool;
-    public static function lookingAt(target: GdVector3, up: GdVector3, useModelFront: Bool = false): Basis;
+    public static function lookingAt(target: GdVector3, ?up: GdVector3, useModelFront: Bool = false): Basis;
     public function orthonormalized(): Basis;
     public function rotated(axis: GdVector3, angle: Float): Basis;
     public function scaled(scale: GdVector3): Basis;

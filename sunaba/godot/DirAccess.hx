@@ -12,7 +12,7 @@ extern class DirAccess extends RefCounted {
     public function copy(from: String, to: String, chmodFlags: Int = -1): Int;
     public static function copyAbsolute(from: String, to: String, chmodFlags: Int = -1): Int;
     public function createLink(source: String, target: String): Int;
-    public static function createTemp(prefix: String, keep: Bool = false): DirAccess;
+    public static function createTemp(?prefix: String, keep: Bool = false): DirAccess;
     public function currentIsDir(): Bool;
     public function dirExists(path: String): Bool;
     public static function dirExistsAbsolute(path: String): Bool;

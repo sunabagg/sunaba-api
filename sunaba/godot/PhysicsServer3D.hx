@@ -6,7 +6,7 @@ import sunaba.core.NativeEvent;
 extern class PhysicsServer3D extends Object {
     @:native("__new")
     public function new();
-    public function areaAddShape(area: RID, shape: RID, transform: Transform3D, disabled: Bool = false): Void;
+    public function areaAddShape(area: RID, shape: RID, ?transform: Transform3D, disabled: Bool = false): Void;
     public function areaAttachObjectInstanceId(area: RID, id: Int): Void;
     public function areaClearShapes(area: RID): Void;
     public function areaCreate(): RID;
@@ -34,13 +34,13 @@ extern class PhysicsServer3D extends Object {
     public function areaSetTransform(area: RID, transform: Transform3D): Void;
     public function bodyAddCollisionException(body: RID, exceptedBody: RID): Void;
     public function bodyAddConstantCentralForce(body: RID, force: GdVector3): Void;
-    public function bodyAddConstantForce(body: RID, force: GdVector3, position: GdVector3): Void;
+    public function bodyAddConstantForce(body: RID, force: GdVector3, ?position: GdVector3): Void;
     public function bodyAddConstantTorque(body: RID, torque: GdVector3): Void;
-    public function bodyAddShape(body: RID, shape: RID, transform: Transform3D, disabled: Bool = false): Void;
+    public function bodyAddShape(body: RID, shape: RID, ?transform: Transform3D, disabled: Bool = false): Void;
     public function bodyApplyCentralForce(body: RID, force: GdVector3): Void;
     public function bodyApplyCentralImpulse(body: RID, impulse: GdVector3): Void;
-    public function bodyApplyForce(body: RID, force: GdVector3, position: GdVector3): Void;
-    public function bodyApplyImpulse(body: RID, impulse: GdVector3, position: GdVector3): Void;
+    public function bodyApplyForce(body: RID, force: GdVector3, ?position: GdVector3): Void;
+    public function bodyApplyImpulse(body: RID, impulse: GdVector3, ?position: GdVector3): Void;
     public function bodyApplyTorque(body: RID, torque: GdVector3): Void;
     public function bodyApplyTorqueImpulse(body: RID, impulse: GdVector3): Void;
     public function bodyAttachObjectInstanceId(body: RID, id: Int): Void;
@@ -75,7 +75,7 @@ extern class PhysicsServer3D extends Object {
     public function bodySetConstantForce(body: RID, force: GdVector3): Void;
     public function bodySetConstantTorque(body: RID, torque: GdVector3): Void;
     public function bodySetEnableContinuousCollisionDetection(body: RID, enable: Bool): Void;
-    public function bodySetForceIntegrationCallback(body: RID, callable: Callable, userdata: Variant): Void;
+    public function bodySetForceIntegrationCallback(body: RID, callable: Callable, ?userdata: Variant): Void;
     public function bodySetMaxContactsReported(body: RID, amount: Int): Void;
     public function bodySetMode(body: RID, mode: Int): Void;
     public function bodySetOmitForceIntegration(body: RID, enable: Bool): Void;
@@ -87,7 +87,7 @@ extern class PhysicsServer3D extends Object {
     public function bodySetSpace(body: RID, space: RID): Void;
     public function bodySetState(body: RID, state: Int, value: Variant): Void;
     public function bodySetStateSyncCallback(body: RID, callable: Callable): Void;
-    public function bodyTestMotion(body: RID, parameters: PhysicsTestMotionParameters3D, result: PhysicsTestMotionResult3D): Bool;
+    public function bodyTestMotion(body: RID, parameters: PhysicsTestMotionParameters3D, ?result: PhysicsTestMotionResult3D): Bool;
     public function boxShapeCreate(): RID;
     public function capsuleShapeCreate(): RID;
     public function concavePolygonShapeCreate(): RID;

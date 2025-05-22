@@ -10,7 +10,7 @@ extern class ArrayMesh extends Mesh {
     @:native("__new")
     public function new();
     public function addBlendShape(name: StringName): Void;
-    public function addSurfaceFromArrays(primitive: Int, arrays: Array<Dynamic>, blendShapes: Dynamic, lods: Map<Dynamic, Dynamic>, flags: Int = 0): Void;
+    public function addSurfaceFromArrays(primitive: Int, arrays: Array<Dynamic>, ?blendShapes: Dynamic, ?lods: Map<Dynamic, Dynamic>, flags: Int = 0): Void;
     public function clearBlendShapes(): Void;
     public function clearSurfaces(): Void;
     public function getBlendShapeCount(): Int;

@@ -55,7 +55,7 @@ extern class OptionButton extends Button {
     public function new();
     public function addIconItem(texture: Texture2D, label: String, id: Int = -1): Void;
     public function addItem(label: String, id: Int = -1): Void;
-    public function addSeparator(text: String): Void;
+    public function addSeparator(?text: String): Void;
     public function clear(): Void;
     public function getItemIcon(idx: Int): Texture2D;
     public function getItemId(idx: Int): Int;

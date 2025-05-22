@@ -9,6 +9,6 @@ extern class PhysicalBoneSimulator3D extends SkeletonModifier3D {
     public function isSimulatingPhysics(): Bool;
     public function physicalBonesAddCollisionException(exception: RID): Void;
     public function physicalBonesRemoveCollisionException(exception: RID): Void;
-    public function physicalBonesStartSimulation(bones: Dynamic): Void;
+    public function physicalBonesStartSimulation(?bones: Dynamic): Void;
     public function physicalBonesStopSimulation(): Void;
 }

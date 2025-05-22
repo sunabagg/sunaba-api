@@ -6,7 +6,7 @@ import sunaba.core.NativeEvent;
 extern class KinematicCollision3D extends RefCounted {
     @:native("__new")
     public function new();
-    public function getAngle(collisionIndex: Int = 0, upDirection: GdVector3): Float;
+    public function getAngle(collisionIndex: Int = 0, ?upDirection: GdVector3): Float;
     public function getCollider(collisionIndex: Int = 0): Object;
     public function getColliderId(collisionIndex: Int = 0): Int;
     public function getColliderRid(collisionIndex: Int = 0): RID;

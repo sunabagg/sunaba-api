@@ -29,7 +29,7 @@ extern class StringName extends NativeObject {
     public function filenocasecmpTo(to: String): Int;
     public function find(what: String, from: Int = 0): Int;
     public function findn(what: String, from: Int = 0): Int;
-    public function format(values: Variant, placeholder: String): String;
+    public function format(values: Variant, ?placeholder: String): String;
     public function getBaseDir(): String;
     public function getBasename(): String;
     public function getExtension(): String;
@@ -60,7 +60,7 @@ extern class StringName extends NativeObject {
     public function jsonEscape(): String;
     public function left(length: Int): String;
     public function length(): Int;
-    public function lpad(minLength: Int, character: String): String;
+    public function lpad(minLength: Int, ?character: String): String;
     public function lstrip(chars: String): String;
     public function match(expr: String): Bool;
     public function matchn(expr: String): Bool;
@@ -79,8 +79,8 @@ extern class StringName extends NativeObject {
     public function rfind(what: String, from: Int = -1): Int;
     public function rfindn(what: String, from: Int = -1): Int;
     public function right(length: Int): String;
-    public function rpad(minLength: Int, character: String): String;
-    public function rsplit(delimiter: String, allowEmpty: Bool = true, maxsplit: Int = 0): PackedStringArray;
+    public function rpad(minLength: Int, ?character: String): String;
+    public function rsplit(?delimiter: String, allowEmpty: Bool = true, maxsplit: Int = 0): PackedStringArray;
     public function rstrip(chars: String): String;
     public function sha1Buffer(): PackedByteArray;
     public function sha1Text(): String;
@@ -88,7 +88,7 @@ extern class StringName extends NativeObject {
     public function sha256Text(): String;
     public function similarity(text: String): Float;
     public function simplifyPath(): String;
-    public function split(delimiter: String, allowEmpty: Bool = true, maxsplit: Int = 0): PackedStringArray;
+    public function split(?delimiter: String, allowEmpty: Bool = true, maxsplit: Int = 0): PackedStringArray;
     public function splitFloats(delimiter: String, allowEmpty: Bool = true): PackedFloat64Array;
     public function stripEdges(left: Bool = true, right: Bool = true): String;
     public function stripEscapes(): String;

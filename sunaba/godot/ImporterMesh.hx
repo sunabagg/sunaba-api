@@ -7,14 +7,14 @@ extern class ImporterMesh extends Resource {
     @:native("__new")
     public function new();
     public function addBlendShape(name: String): Void;
-    public function addSurface(primitive: Int, arrays: Array<Dynamic>, blendShapes: Dynamic, lods: Map<Dynamic, Dynamic>, material: Material, name: String, flags: Int = 0): Void;
+    public function addSurface(primitive: Int, arrays: Array<Dynamic>, ?blendShapes: Dynamic, ?lods: Map<Dynamic, Dynamic>, ?material: Material, ?name: String, flags: Int = 0): Void;
     public function clear(): Void;
     public function generateLods(normalMergeAngle: Float, normalSplitAngle: Float, boneTransformArray: Array<Dynamic>): Void;
     public function getBlendShapeCount(): Int;
     public function getBlendShapeMode(): Int;
     public function getBlendShapeName(blendShapeIdx: Int): String;
     public function getLightmapSizeHint(): Vector2i;
-    public function getMesh(baseMesh: ArrayMesh): ArrayMesh;
+    public function getMesh(?baseMesh: ArrayMesh): ArrayMesh;
     public function getSurfaceArrays(surfaceIdx: Int): Array<Dynamic>;
     public function getSurfaceBlendShapeArrays(surfaceIdx: Int, blendShapeIdx: Int): Array<Dynamic>;
     public function getSurfaceCount(): Int;

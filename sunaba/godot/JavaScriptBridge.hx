@@ -8,7 +8,7 @@ extern class JavaScriptBridge extends Object {
     public function new();
     public function createCallback(callable: Callable): JavaScriptObject;
     public function createObject(object: String): Variant;
-    public function downloadBuffer(buffer: PackedByteArray, name: String, mime: String): Void;
+    public function downloadBuffer(buffer: PackedByteArray, name: String, ?mime: String): Void;
     public function eval(code: String, useGlobalExecutionContext: Bool = false): Variant;
     public function forceFsSync(): Void;
     public function getInterface(interface: String): JavaScriptObject;

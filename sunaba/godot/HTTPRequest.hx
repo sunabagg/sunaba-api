@@ -17,8 +17,8 @@ extern class HTTPRequest extends Node {
     public function getBodySize(): Int;
     public function getDownloadedBytes(): Int;
     public function getHttpClientStatus(): Int;
-    public function request(url: String, customHeaders: PackedStringArray, method: Int = 0, requestData: String): Int;
-    public function requestRaw(url: String, customHeaders: PackedStringArray, method: Int = 0, requestDataRaw: PackedByteArray): Int;
+    public function request(url: String, ?customHeaders: PackedStringArray, method: Int = 0, ?requestData: String): Int;
+    public function requestRaw(url: String, ?customHeaders: PackedStringArray, method: Int = 0, ?requestDataRaw: PackedByteArray): Int;
     public function setHttpProxy(host: String, port: Int): Void;
     public function setHttpsProxy(host: String, port: Int): Void;
     public function setTlsOptions(clientOptions: TLSOptions): Void;

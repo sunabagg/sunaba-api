@@ -8,6 +8,6 @@ extern class AESContext extends RefCounted {
     public function new();
     public function finish(): Void;
     public function getIvState(): PackedByteArray;
-    public function start(mode: Int, key: PackedByteArray, iv: PackedByteArray): Int;
+    public function start(mode: Int, key: PackedByteArray, ?iv: PackedByteArray): Int;
     public function update(src: PackedByteArray): PackedByteArray;
 }

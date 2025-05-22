@@ -18,13 +18,13 @@ extern class PhysicsDirectBodyState2D extends Object {
     public var transform: Transform2D;
     @:native("__new")
     public function new();
-    public function addConstantCentralForce(force: GdVector2): Void;
-    public function addConstantForce(force: GdVector2, position: GdVector2): Void;
+    public function addConstantCentralForce(?force: GdVector2): Void;
+    public function addConstantForce(force: GdVector2, ?position: GdVector2): Void;
     public function addConstantTorque(torque: Float): Void;
-    public function applyCentralForce(force: GdVector2): Void;
+    public function applyCentralForce(?force: GdVector2): Void;
     public function applyCentralImpulse(impulse: GdVector2): Void;
-    public function applyForce(force: GdVector2, position: GdVector2): Void;
-    public function applyImpulse(impulse: GdVector2, position: GdVector2): Void;
+    public function applyForce(force: GdVector2, ?position: GdVector2): Void;
+    public function applyImpulse(impulse: GdVector2, ?position: GdVector2): Void;
     public function applyTorque(torque: Float): Void;
     public function applyTorqueImpulse(impulse: Float): Void;
     public function getConstantForce(): Vector2;

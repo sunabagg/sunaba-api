@@ -16,7 +16,7 @@ extern class DisplayServer extends Object {
     public static function clipboardSetPrimary(clipboardPrimary: String): Void;
     public static function createStatusIndicator(icon: Texture2D, tooltip: String, callback: Callable): Int;
     public static function cursorGetShape(): Int;
-    public static function cursorSetCustomImage(cursor: Resource, shape: Int = 0, hotspot: GdVector2): Void;
+    public static function cursorSetCustomImage(cursor: Resource, shape: Int = 0, ?hotspot: GdVector2): Void;
     public static function cursorSetShape(shape: Int): Void;
     public static function deleteStatusIndicator(id: Int): Void;
     public static function dialogInputText(title: String, description: String, existingText: String, callback: Callable): Int;
@@ -37,13 +37,13 @@ extern class DisplayServer extends Object {
     public static function getSwapCancelOk(): Bool;
     public static function getWindowAtScreenPosition(position: GdVector2i): Int;
     public static function getWindowList(): PackedInt32Array;
-    public static function globalMenuAddCheckItem(menuRoot: String, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
-    public static function globalMenuAddIconCheckItem(menuRoot: String, icon: Texture2D, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
-    public static function globalMenuAddIconItem(menuRoot: String, icon: Texture2D, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
-    public static function globalMenuAddIconRadioCheckItem(menuRoot: String, icon: Texture2D, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
-    public static function globalMenuAddItem(menuRoot: String, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
-    public static function globalMenuAddMultistateItem(menuRoot: String, label: String, maxStates: Int, defaultState: Int, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
-    public static function globalMenuAddRadioCheckItem(menuRoot: String, label: String, callback: Callable, keyCallback: Callable, tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public static function globalMenuAddCheckItem(menuRoot: String, label: String, ?callback: Callable, ?keyCallback: Callable, ?tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public static function globalMenuAddIconCheckItem(menuRoot: String, icon: Texture2D, label: String, ?callback: Callable, ?keyCallback: Callable, ?tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public static function globalMenuAddIconItem(menuRoot: String, icon: Texture2D, label: String, ?callback: Callable, ?keyCallback: Callable, ?tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public static function globalMenuAddIconRadioCheckItem(menuRoot: String, icon: Texture2D, label: String, ?callback: Callable, ?keyCallback: Callable, ?tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public static function globalMenuAddItem(menuRoot: String, label: String, ?callback: Callable, ?keyCallback: Callable, ?tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public static function globalMenuAddMultistateItem(menuRoot: String, label: String, maxStates: Int, defaultState: Int, ?callback: Callable, ?keyCallback: Callable, ?tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
+    public static function globalMenuAddRadioCheckItem(menuRoot: String, label: String, ?callback: Callable, ?keyCallback: Callable, ?tag: Variant, accelerator: Int = 0, index: Int = -1): Int;
     public static function globalMenuAddSeparator(menuRoot: String, index: Int = -1): Int;
     public static function globalMenuAddSubmenuItem(menuRoot: String, label: String, submenu: String, index: Int = -1): Int;
     public static function globalMenuClear(menuRoot: String): Void;
@@ -148,7 +148,7 @@ extern class DisplayServer extends Object {
     public static function unregisterAdditionalOutput(object: Object): Void;
     public static function virtualKeyboardGetHeight(): Int;
     public static function virtualKeyboardHide(): Void;
-    public static function virtualKeyboardShow(existingText: String, position: Rect2, type: Int = 0, maxLength: Int = -1, cursorStart: Int = -1, cursorEnd: Int = -1): Void;
+    public static function virtualKeyboardShow(existingText: String, ?position: Rect2, type: Int = 0, maxLength: Int = -1, cursorStart: Int = -1, cursorEnd: Int = -1): Void;
     public static function warpMouse(position: GdVector2i): Void;
     public static function windowCanDraw(windowId: Int = 0): Bool;
     public static function windowGetActivePopup(): Int;

@@ -97,7 +97,7 @@ extern class Tree extends Control {
     @:native("__new")
     public function new();
     public function clear(): Void;
-    public function createItem(parent: TreeItem, index: Int = -1): TreeItem;
+    public function createItem(?parent: TreeItem, index: Int = -1): TreeItem;
     public function deselectAll(): Void;
     public function editSelected(forceEdit: Bool = false): Bool;
     public function ensureCursorIsVisible(): Void;

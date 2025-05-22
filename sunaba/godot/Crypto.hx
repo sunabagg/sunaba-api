@@ -11,7 +11,7 @@ extern class Crypto extends RefCounted {
     public function encrypt(key: CryptoKey, plaintext: PackedByteArray): PackedByteArray;
     public function generateRandomBytes(size: Int): PackedByteArray;
     public function generateRsa(size: Int): CryptoKey;
-    public function generateSelfSignedCertificate(key: CryptoKey, issuerName: String, notBefore: String, notAfter: String): X509Certificate;
+    public function generateSelfSignedCertificate(key: CryptoKey, ?issuerName: String, ?notBefore: String, ?notAfter: String): X509Certificate;
     public function hmacDigest(hashType: Int, key: PackedByteArray, msg: PackedByteArray): PackedByteArray;
     public function sign(hashType: Int, hash: PackedByteArray, key: CryptoKey): PackedByteArray;
     public function verify(hashType: Int, hash: PackedByteArray, signature: PackedByteArray, key: CryptoKey): Bool;

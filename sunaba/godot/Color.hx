@@ -34,7 +34,7 @@ extern class Color extends NativeObject {
     @:native("__new")
     public static function rGBA(r: Float, g: Float, b: Float, a: Float): Color;
     public function blend(over: Color): Color;
-    public function clamp(min: Color, max: Color): Color;
+    public function clamp(?min: Color, ?max: Color): Color;
     public function darkened(amount: Float): Color;
     public static function fromHsv(h: Float, s: Float, v: Float, alpha: Float = 1.0): Color;
     public static function fromOkHsl(h: Float, s: Float, l: Float, alpha: Float = 1.0): Color;

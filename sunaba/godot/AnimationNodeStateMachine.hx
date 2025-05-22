@@ -9,7 +9,7 @@ extern class AnimationNodeStateMachine extends AnimationRootNode {
     public var stateMachineType: Int;
     @:native("__new")
     public function new();
-    public function addNode(name: StringName, node: AnimationNode, position: GdVector2): Void;
+    public function addNode(name: StringName, node: AnimationNode, ?position: GdVector2): Void;
     public function addTransition(from: StringName, to: StringName, transition: AnimationNodeStateMachineTransition): Void;
     public function getGraphOffset(): Vector2;
     public function getNode(name: StringName): AnimationNode;

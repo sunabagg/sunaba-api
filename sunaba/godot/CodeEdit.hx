@@ -62,7 +62,7 @@ extern class CodeEdit extends TextEdit {
     @:native("__new")
     public function new();
     public function addAutoBraceCompletionPair(startKey: String, endKey: String): Void;
-    public function addCodeCompletionOption(type: Int, displayText: String, insertText: String, textColor: Color, icon: Resource, value: Variant, location: Int = 1024): Void;
+    public function addCodeCompletionOption(type: Int, displayText: String, insertText: String, ?textColor: Color, ?icon: Resource, ?value: Variant, location: Int = 1024): Void;
     public function addCommentDelimiter(startKey: String, endKey: String, lineOnly: Bool = false): Void;
     public function addStringDelimiter(startKey: String, endKey: String, lineOnly: Bool = false): Void;
     public function canFoldLine(line: Int): Bool;
@@ -119,7 +119,7 @@ extern class CodeEdit extends TextEdit {
     public function setCodeCompletionSelectedIndex(index: Int): Void;
     public function setCodeHint(codeHint: String): Void;
     public function setCodeHintDrawBelow(drawBelow: Bool): Void;
-    public function setCodeRegionTags(start: String, end: String): Void;
+    public function setCodeRegionTags(?start: String, ?end: String): Void;
     public function setLineAsBookmarked(line: Int, bookmarked: Bool): Void;
     public function setLineAsBreakpoint(line: Int, breakpointed: Bool): Void;
     public function setLineAsExecuting(line: Int, executing: Bool): Void;

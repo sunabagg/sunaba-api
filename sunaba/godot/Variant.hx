@@ -7,6 +7,4 @@ import sunaba.core.NativeObject;
 extern class Variant extends NativeObject {
     @:native("__new")
     public function new();
-
-    public function asString() : String;
 }

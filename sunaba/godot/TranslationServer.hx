@@ -29,6 +29,6 @@ extern class TranslationServer extends Object {
     public static function removeTranslation(translation: Translation): Void;
     public static function setLocale(locale: String): Void;
     public static function standardizeLocale(locale: String, addDefaults: Bool = false): String;
-    public static function translate(message: StringName, context: StringName): StringName;
-    public static function translatePlural(message: StringName, pluralMessage: StringName, n: Int, context: StringName): StringName;
+    public static function translate(message: StringName, ?context: StringName): StringName;
+    public static function translatePlural(message: StringName, pluralMessage: StringName, n: Int, ?context: StringName): StringName;
 }

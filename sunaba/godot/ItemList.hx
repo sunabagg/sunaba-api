@@ -100,7 +100,7 @@ extern class ItemList extends Control {
     @:native("__new")
     public function new();
     public function addIconItem(icon: Texture2D, selectable: Bool = true): Int;
-    public function addItem(text: String, icon: Texture2D, selectable: Bool = true): Int;
+    public function addItem(text: String, ?icon: Texture2D, selectable: Bool = true): Int;
     public function clear(): Void;
     public function deselect(idx: Int): Void;
     public function deselectAll(): Void;

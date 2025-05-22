@@ -12,7 +12,7 @@ extern class ConfigFile extends RefCounted {
     public function eraseSectionKey(section: String, key: String): Void;
     public function getSectionKeys(section: String): PackedStringArray;
     public function getSections(): PackedStringArray;
-    public function getValue(section: String, key: String, Default: Variant): Variant;
+    public function getValue(section: String, key: String, ?Default: Variant): Variant;
     public function hasSection(section: String): Bool;
     public function hasSectionKey(section: String, key: String): Bool;
     public function load(path: String): Int;

@@ -22,7 +22,7 @@ extern class Transform3D extends NativeObject {
     public function inverse(): Transform3D;
     public function isEqualApprox(xform: Transform3D): Bool;
     public function isFinite(): Bool;
-    public function lookingAt(target: GdVector3, up: GdVector3, useModelFront: Bool = false): Transform3D;
+    public function lookingAt(target: GdVector3, ?up: GdVector3, useModelFront: Bool = false): Transform3D;
     public function orthonormalized(): Transform3D;
     public function rotated(axis: GdVector3, angle: Float): Transform3D;
     public function rotatedLocal(axis: GdVector3, angle: Float): Transform3D;

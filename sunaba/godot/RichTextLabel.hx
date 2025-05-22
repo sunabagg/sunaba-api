@@ -111,7 +111,7 @@ extern class RichTextLabel extends Control {
     public var visibleRatio: Float;
     @:native("__new")
     public function new();
-    public function addImage(image: Texture2D, width: Int = 0, height: Int = 0, color: Color, inlineAlign: Int = 5, region: Rect2, key: Variant, pad: Bool = false, tooltip: String, sizeInPercent: Bool = false): Void;
+    public function addImage(image: Texture2D, width: Int = 0, height: Int = 0, ?color: Color, inlineAlign: Int = 5, ?region: Rect2, ?key: Variant, pad: Bool = false, ?tooltip: String, sizeInPercent: Bool = false): Void;
     public function addText(text: String): Void;
     public function appendText(bbcode: String): Void;
     public function clear(): Void;
@@ -154,7 +154,7 @@ extern class RichTextLabel extends Control {
     public function pushColor(color: Color): Void;
     public function pushContext(): Void;
     public function pushCustomfx(effect: RichTextEffect, env: Map<Dynamic, Dynamic>): Void;
-    public function pushDropcap(string: String, font: Font, size: Int, dropcapMargins: Rect2, color: Color, outlineSize: Int = 0, outlineColor: Color): Void;
+    public function pushDropcap(string: String, font: Font, size: Int, ?dropcapMargins: Rect2, ?color: Color, outlineSize: Int = 0, ?outlineColor: Color): Void;
     public function pushFgcolor(fgcolor: Color): Void;
     public function pushFont(font: Font, fontSize: Int = 0): Void;
     public function pushFontSize(fontSize: Int): Void;
@@ -162,13 +162,13 @@ extern class RichTextLabel extends Control {
     public function pushIndent(level: Int): Void;
     public function pushItalics(): Void;
     public function pushLanguage(language: String): Void;
-    public function pushList(level: Int, type: Int, capitalize: Bool, bullet: String): Void;
-    public function pushMeta(data: Variant, underlineMode: Int = 1, tooltip: String): Void;
+    public function pushList(level: Int, type: Int, capitalize: Bool, ?bullet: String): Void;
+    public function pushMeta(data: Variant, underlineMode: Int = 1, ?tooltip: String): Void;
     public function pushMono(): Void;
     public function pushNormal(): Void;
     public function pushOutlineColor(color: Color): Void;
     public function pushOutlineSize(outlineSize: Int): Void;
-    public function pushParagraph(alignment: Int, baseDirection: Int = 0, language: String, stParser: Int = 0, justificationFlags: Int = 163, tabStops: PackedFloat32Array): Void;
+    public function pushParagraph(alignment: Int, baseDirection: Int = 0, ?language: String, stParser: Int = 0, justificationFlags: Int = 163, ?tabStops: PackedFloat32Array): Void;
     public function pushStrikethrough(): Void;
     public function pushTable(columns: Int, inlineAlign: Int = 0, alignToRow: Int = -1): Void;
     public function pushUnderline(): Void;
@@ -182,7 +182,7 @@ extern class RichTextLabel extends Control {
     public function setCellRowBackgroundColor(oddRowBg: Color, evenRowBg: Color): Void;
     public function setCellSizeOverride(minSize: GdVector2, maxSize: GdVector2): Void;
     public function setTableColumnExpand(column: Int, expand: Bool, ratio: Int = 1, shrink: Bool = true): Void;
-    public function updateImage(key: Variant, mask: Int, image: Texture2D, width: Int = 0, height: Int = 0, color: Color, inlineAlign: Int = 5, region: Rect2, pad: Bool = false, tooltip: String, sizeInPercent: Bool = false): Void;
+    public function updateImage(key: Variant, mask: Int, image: Texture2D, width: Int = 0, height: Int = 0, ?color: Color, inlineAlign: Int = 5, ?region: Rect2, pad: Bool = false, ?tooltip: String, sizeInPercent: Bool = false): Void;
     public var finished: NativeEvent;
     public var metaClicked: NativeEvent;
     public var metaHoverEnded: NativeEvent;

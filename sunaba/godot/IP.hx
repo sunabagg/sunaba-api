@@ -6,7 +6,7 @@ import sunaba.core.NativeEvent;
 extern class IP extends Object {
     @:native("__new")
     public function new();
-    public function clearCache(hostname: String): Void;
+    public function clearCache(?hostname: String): Void;
     public function eraseResolveItem(id: Int): Void;
     public function getLocalAddresses(): PackedStringArray;
     public function getLocalInterfaces(): Dynamic;

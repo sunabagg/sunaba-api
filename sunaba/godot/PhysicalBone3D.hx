@@ -23,7 +23,7 @@ extern class PhysicalBone3D extends PhysicsBody3D {
     @:native("__new")
     public function new();
     public function applyCentralImpulse(impulse: GdVector3): Void;
-    public function applyImpulse(impulse: GdVector3, position: GdVector3): Void;
+    public function applyImpulse(impulse: GdVector3, ?position: GdVector3): Void;
     public function getBoneId(): Int;
     public function getSimulatePhysics(): Bool;
     public function isSimulatingPhysics(): Bool;

@@ -20,7 +20,7 @@ extern class EditorProperty extends Container {
     public function new();
     public function addFocusable(control: Control): Void;
     public function deselect(): Void;
-    public function emitChanged(property: StringName, value: Variant, field: StringName, changing: Bool = false): Void;
+    public function emitChanged(property: StringName, value: Variant, ?field: StringName, changing: Bool = false): Void;
     public function getEditedObject(): Object;
     public function getEditedProperty(): StringName;
     public function isSelected(): Bool;

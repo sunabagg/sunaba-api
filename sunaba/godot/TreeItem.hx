@@ -10,7 +10,7 @@ extern class TreeItem extends Object {
     public var visible: Bool;
     @:native("__new")
     public function new();
-    public function addButton(column: Int, button: Texture2D, id: Int = -1, disabled: Bool = false, tooltipText: String): Void;
+    public function addButton(column: Int, button: Texture2D, id: Int = -1, disabled: Bool = false, ?tooltipText: String): Void;
     public function addChild(child: TreeItem): Void;
     public function callRecursive(method: StringName): Void;
     public function clearButtons(): Void;

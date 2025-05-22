@@ -8,7 +8,7 @@ extern class Curve2D extends Resource {
     public var pointCount: Int;
     @:native("__new")
     public function new();
-    public function addPoint(position: GdVector2, in: GdVector2, out: GdVector2, index: Int = -1): Void;
+    public function addPoint(position: GdVector2, ?in: GdVector2, ?out: GdVector2, index: Int = -1): Void;
     public function clearPoints(): Void;
     public function getBakedLength(): Float;
     public function getBakedPoints(): PackedVector2Array;

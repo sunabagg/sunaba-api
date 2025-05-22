@@ -6,7 +6,7 @@ import sunaba.core.NativeEvent;
 extern class StreamPeerTCP extends StreamPeer {
     @:native("__new")
     public function new();
-    public function bind(port: Int, host: String): Int;
+    public function bind(port: Int, ?host: String): Int;
     public function connectToHost(host: String, port: Int): Int;
     public function disconnectFromHost(): Void;
     public function getConnectedHost(): String;

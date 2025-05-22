@@ -25,5 +25,5 @@ extern class PhysicsBody3D extends CollisionObject3D {
     public function moveAndCollide(motion: GdVector3, testOnly: Bool = false, safeMargin: Float = 0.001, recoveryAsCollision: Bool = false, maxCollisions: Int = 1): KinematicCollision3D;
     public function removeCollisionExceptionWith(body: Node): Void;
     public function setAxisLock(axis: Int, lock: Bool): Void;
-    public function testMove(from: Transform3D, motion: GdVector3, collision: KinematicCollision3D, safeMargin: Float = 0.001, recoveryAsCollision: Bool = false, maxCollisions: Int = 1): Bool;
+    public function testMove(from: Transform3D, motion: GdVector3, ?collision: KinematicCollision3D, safeMargin: Float = 0.001, recoveryAsCollision: Bool = false, maxCollisions: Int = 1): Bool;
 }

@@ -7,7 +7,7 @@ extern class AnimationNodeBlendTree extends AnimationRootNode {
     public var graphOffset: Vector2;
     @:native("__new")
     public function new();
-    public function addNode(name: StringName, node: AnimationNode, position: GdVector2): Void;
+    public function addNode(name: StringName, node: AnimationNode, ?position: GdVector2): Void;
     public function connectNode(inputNode: StringName, inputIndex: Int, outputNode: StringName): Void;
     public function disconnectNode(inputNode: StringName, inputIndex: Int): Void;
     public function getNode(name: StringName): AnimationNode;

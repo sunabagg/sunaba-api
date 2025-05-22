@@ -55,7 +55,7 @@ extern class Skeleton3D extends Node3D {
     public function localizeRests(): Void;
     public function physicalBonesAddCollisionException(exception: RID): Void;
     public function physicalBonesRemoveCollisionException(exception: RID): Void;
-    public function physicalBonesStartSimulation(bones: Dynamic): Void;
+    public function physicalBonesStartSimulation(?bones: Dynamic): Void;
     public function physicalBonesStopSimulation(): Void;
     public function registerSkin(skin: Skin): SkinReference;
     public function resetBonePose(boneIdx: Int): Void;

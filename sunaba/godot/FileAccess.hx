@@ -8,7 +8,7 @@ extern class FileAccess extends RefCounted {
     @:native("__new")
     public function new();
     public function close(): Void;
-    public static function createTemp(modeFlags: Int, prefix: String, extension: String, keep: Bool = false): FileAccess;
+    public static function createTemp(modeFlags: Int, ?prefix: String, ?extension: String, keep: Bool = false): FileAccess;
     public function eofReached(): Bool;
     public static function fileExists(path: String): Bool;
     public function flush(): Void;
@@ -18,7 +18,7 @@ extern class FileAccess extends RefCounted {
     public function get64(): Int;
     public function getAsText(skipCr: Bool = false): String;
     public function getBuffer(length: Int): PackedByteArray;
-    public function getCsvLine(delim: String): PackedStringArray;
+    public function getCsvLine(?delim: String): PackedStringArray;
     public function getDouble(): Float;
     public function getError(): Int;
     public static function getFileAsBytes(path: String): PackedByteArray;
@@ -43,7 +43,7 @@ extern class FileAccess extends RefCounted {
     public function isOpen(): Bool;
     public static function open(path: String, flags: Int): FileAccess;
     public static function openCompressed(path: String, modeFlags: Int, compressionMode: Int = 0): FileAccess;
-    public static function openEncrypted(path: String, modeFlags: Int, key: PackedByteArray, iv: PackedByteArray): FileAccess;
+    public static function openEncrypted(path: String, modeFlags: Int, key: PackedByteArray, ?iv: PackedByteArray): FileAccess;
     public static function openEncryptedWithPass(path: String, modeFlags: Int, pass: String): FileAccess;
     public function resize(length: Int): Int;
     public function seek(position: Int): Void;
@@ -56,7 +56,7 @@ extern class FileAccess extends RefCounted {
     public function store32(value: Int): Bool;
     public function store64(value: Int): Bool;
     public function storeBuffer(buffer: PackedByteArray): Bool;
-    public function storeCsvLine(values: PackedStringArray, delim: String): Bool;
+    public function storeCsvLine(values: PackedStringArray, ?delim: String): Bool;
     public function storeDouble(value: Float): Bool;
     public function storeFloat(value: Float): Bool;
     public function storeHalf(value: Float): Bool;

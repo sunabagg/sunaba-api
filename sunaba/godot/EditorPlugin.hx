@@ -8,9 +8,9 @@ extern class EditorPlugin extends Node {
     public function new();
     public function addAutoloadSingleton(name: String, path: String): Void;
     public function addContextMenuPlugin(slot: Int, plugin: EditorContextMenuPlugin): Void;
-    public function addControlToBottomPanel(control: Control, title: String, shortcut: Shortcut): Button;
+    public function addControlToBottomPanel(control: Control, title: String, ?shortcut: Shortcut): Button;
     public function addControlToContainer(container: Int, control: Control): Void;
-    public function addControlToDock(slot: Int, control: Control, shortcut: Shortcut): Void;
+    public function addControlToDock(slot: Int, control: Control, ?shortcut: Shortcut): Void;
     public function addCustomType(type: String, base: String, script: Script, icon: Texture2D): Void;
     public function addDebuggerPlugin(script: EditorDebuggerPlugin): Void;
     public function addExportPlatform(platform: EditorExportPlatform): Void;

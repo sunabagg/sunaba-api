@@ -415,7 +415,7 @@ extern class EditorSettings extends Resource {
     public function erase(property: String): Void;
     public function getChangedSettings(): PackedStringArray;
     public function getFavorites(): PackedStringArray;
-    public function getProjectMetadata(section: String, key: String, Default: Variant): Variant;
+    public function getProjectMetadata(section: String, key: String, ?Default: Variant): Variant;
     public function getRecentDirs(): PackedStringArray;
     public function getSetting(name: String): Variant;
     public function hasSetting(name: String): Bool;

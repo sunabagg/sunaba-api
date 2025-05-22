@@ -6,7 +6,7 @@ import sunaba.core.NativeEvent;
 extern class PhysicsServer2D extends Object {
     @:native("__new")
     public function new();
-    public function areaAddShape(area: RID, shape: RID, transform: Transform2D, disabled: Bool = false): Void;
+    public function areaAddShape(area: RID, shape: RID, ?transform: Transform2D, disabled: Bool = false): Void;
     public function areaAttachCanvasInstanceId(area: RID, id: Int): Void;
     public function areaAttachObjectInstanceId(area: RID, id: Int): Void;
     public function areaClearShapes(area: RID): Void;
@@ -35,13 +35,13 @@ extern class PhysicsServer2D extends Object {
     public function areaSetTransform(area: RID, transform: Transform2D): Void;
     public function bodyAddCollisionException(body: RID, exceptedBody: RID): Void;
     public function bodyAddConstantCentralForce(body: RID, force: GdVector2): Void;
-    public function bodyAddConstantForce(body: RID, force: GdVector2, position: GdVector2): Void;
+    public function bodyAddConstantForce(body: RID, force: GdVector2, ?position: GdVector2): Void;
     public function bodyAddConstantTorque(body: RID, torque: Float): Void;
-    public function bodyAddShape(body: RID, shape: RID, transform: Transform2D, disabled: Bool = false): Void;
+    public function bodyAddShape(body: RID, shape: RID, ?transform: Transform2D, disabled: Bool = false): Void;
     public function bodyApplyCentralForce(body: RID, force: GdVector2): Void;
     public function bodyApplyCentralImpulse(body: RID, impulse: GdVector2): Void;
-    public function bodyApplyForce(body: RID, force: GdVector2, position: GdVector2): Void;
-    public function bodyApplyImpulse(body: RID, impulse: GdVector2, position: GdVector2): Void;
+    public function bodyApplyForce(body: RID, force: GdVector2, ?position: GdVector2): Void;
+    public function bodyApplyImpulse(body: RID, impulse: GdVector2, ?position: GdVector2): Void;
     public function bodyApplyTorque(body: RID, torque: Float): Void;
     public function bodyApplyTorqueImpulse(body: RID, impulse: Float): Void;
     public function bodyAttachCanvasInstanceId(body: RID, id: Int): Void;
@@ -76,7 +76,7 @@ extern class PhysicsServer2D extends Object {
     public function bodySetConstantForce(body: RID, force: GdVector2): Void;
     public function bodySetConstantTorque(body: RID, torque: Float): Void;
     public function bodySetContinuousCollisionDetectionMode(body: RID, mode: Int): Void;
-    public function bodySetForceIntegrationCallback(body: RID, callable: Callable, userdata: Variant): Void;
+    public function bodySetForceIntegrationCallback(body: RID, callable: Callable, ?userdata: Variant): Void;
     public function bodySetMaxContactsReported(body: RID, amount: Int): Void;
     public function bodySetMode(body: RID, mode: Int): Void;
     public function bodySetOmitForceIntegration(body: RID, enable: Bool): Void;
@@ -88,7 +88,7 @@ extern class PhysicsServer2D extends Object {
     public function bodySetSpace(body: RID, space: RID): Void;
     public function bodySetState(body: RID, state: Int, value: Variant): Void;
     public function bodySetStateSyncCallback(body: RID, callable: Callable): Void;
-    public function bodyTestMotion(body: RID, parameters: PhysicsTestMotionParameters2D, result: PhysicsTestMotionResult2D): Bool;
+    public function bodyTestMotion(body: RID, parameters: PhysicsTestMotionParameters2D, ?result: PhysicsTestMotionResult2D): Bool;
     public function capsuleShapeCreate(): RID;
     public function circleShapeCreate(): RID;
     public function concavePolygonShapeCreate(): RID;
@@ -103,9 +103,9 @@ extern class PhysicsServer2D extends Object {
     public function jointGetParam(joint: RID, param: Int): Float;
     public function jointGetType(joint: RID): Int;
     public function jointIsDisabledCollisionsBetweenBodies(joint: RID): Bool;
-    public function jointMakeDampedSpring(joint: RID, anchorA: GdVector2, anchorB: GdVector2, bodyA: RID, bodyB: RID): Void;
-    public function jointMakeGroove(joint: RID, groove1A: GdVector2, groove2A: GdVector2, anchorB: GdVector2, bodyA: RID, bodyB: RID): Void;
-    public function jointMakePin(joint: RID, anchor: GdVector2, bodyA: RID, bodyB: RID): Void;
+    public function jointMakeDampedSpring(joint: RID, anchorA: GdVector2, anchorB: GdVector2, bodyA: RID, ?bodyB: RID): Void;
+    public function jointMakeGroove(joint: RID, groove1A: GdVector2, groove2A: GdVector2, anchorB: GdVector2, ?bodyA: RID, ?bodyB: RID): Void;
+    public function jointMakePin(joint: RID, anchor: GdVector2, bodyA: RID, ?bodyB: RID): Void;
     public function jointSetParam(joint: RID, param: Int, value: Float): Void;
     public function pinJointGetFlag(joint: RID, flag: Int): Bool;
     public function pinJointGetParam(joint: RID, param: Int): Float;

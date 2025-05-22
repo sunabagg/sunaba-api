@@ -10,7 +10,7 @@ extern class Curve3D extends Resource {
     public var upVectorEnabled: Bool;
     @:native("__new")
     public function new();
-    public function addPoint(position: GdVector3, in: GdVector3, out: GdVector3, index: Int = -1): Void;
+    public function addPoint(position: GdVector3, ?in: GdVector3, ?out: GdVector3, index: Int = -1): Void;
     public function clearPoints(): Void;
     public function getBakedLength(): Float;
     public function getBakedPoints(): PackedVector3Array;

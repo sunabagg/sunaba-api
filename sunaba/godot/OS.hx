@@ -9,14 +9,14 @@ extern class OS extends Object {
     public static var lowProcessorUsageModeSleepUsec: Int;
     @:native("__new")
     public function new();
-    public static function alert(text: String, title: String): Void;
+    public static function alert(text: String, ?title: String): Void;
     public static function closeMidiInputs(): Void;
     public static function crash(message: String): Void;
     public static function createInstance(arguments: PackedStringArray): Int;
     public static function createProcess(path: String, arguments: PackedStringArray, openConsole: Bool = false): Int;
     public static function delayMsec(msec: Int): Void;
     public static function delayUsec(usec: Int): Void;
-    public static function execute(path: String, arguments: PackedStringArray, output: Array<Dynamic>, readStderr: Bool = false, openConsole: Bool = false): Int;
+    public static function execute(path: String, arguments: PackedStringArray, ?output: Array<Dynamic>, readStderr: Bool = false, openConsole: Bool = false): Int;
     public static function executeWithPipe(path: String, arguments: PackedStringArray, blocking: Bool = true): Map<Dynamic, Dynamic>;
     public static function findKeycodeFromString(string: String): Int;
     public static function getCacheDir(): String;
@@ -50,7 +50,7 @@ extern class OS extends Object {
     public static function getSystemCaCertificates(): String;
     public static function getSystemDir(dir: Int, sharedStorage: Bool = true): String;
     public static function getSystemFontPath(fontName: String, weight: Int = 400, stretch: Int = 100, italic: Bool = false): String;
-    public static function getSystemFontPathForText(fontName: String, text: String, locale: String, script: String, weight: Int = 400, stretch: Int = 100, italic: Bool = false): PackedStringArray;
+    public static function getSystemFontPathForText(fontName: String, text: String, ?locale: String, ?script: String, weight: Int = 400, stretch: Int = 100, italic: Bool = false): PackedStringArray;
     public static function getSystemFonts(): PackedStringArray;
     public static function getTempDir(): String;
     public static function getThreadCallerId(): Int;
@@ -77,7 +77,7 @@ extern class OS extends Object {
     public static function requestPermissions(): Bool;
     public static function revokeGrantedPermissions(): Void;
     public static function setEnvironment(variable: String, value: String): Void;
-    public static function setRestartOnExit(restart: Bool, arguments: PackedStringArray): Void;
+    public static function setRestartOnExit(restart: Bool, ?arguments: PackedStringArray): Void;
     public static function setThreadName(name: String): Int;
     public static function setUseFileAccessSaveAndSwap(enabled: Bool): Void;
     public static function shellOpen(uri: String): Int;

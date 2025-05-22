@@ -71,8 +71,8 @@ extern class Node3D extends Node {
     public function isScaleDisabled(): Bool;
     public function isTransformNotificationEnabled(): Bool;
     public function isVisibleInTree(): Bool;
-    public function lookAt(target: GdVector3, up: GdVector3, useModelFront: Bool = false): Void;
-    public function lookAtFromPosition(position: GdVector3, target: GdVector3, up: GdVector3, useModelFront: Bool = false): Void;
+    public function lookAt(target: GdVector3, ?up: GdVector3, useModelFront: Bool = false): Void;
+    public function lookAtFromPosition(position: GdVector3, target: GdVector3, ?up: GdVector3, useModelFront: Bool = false): Void;
     public function orthonormalize(): Void;
     public function rotate(axis: GdVector3, angle: Float): Void;
     public function rotateObjectLocal(axis: GdVector3, angle: Float): Void;

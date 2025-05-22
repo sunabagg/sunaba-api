@@ -7,12 +7,12 @@ extern class SurfaceTool extends RefCounted {
     @:native("__new")
     public function new();
     public function addIndex(index: Int): Void;
-    public function addTriangleFan(vertices: PackedVector3Array, uvs: PackedVector2Array, colors: PackedColorArray, uv2s: PackedVector2Array, normals: PackedVector3Array, tangents: Dynamic): Void;
+    public function addTriangleFan(vertices: PackedVector3Array, ?uvs: PackedVector2Array, ?colors: PackedColorArray, ?uv2s: PackedVector2Array, ?normals: PackedVector3Array, ?tangents: Dynamic): Void;
     public function addVertex(vertex: GdVector3): Void;
     public function appendFrom(existing: Mesh, surface: Int, transform: Transform3D): Void;
     public function begin(primitive: Int): Void;
     public function clear(): Void;
-    public function commit(existing: ArrayMesh, flags: Int = 0): ArrayMesh;
+    public function commit(?existing: ArrayMesh, flags: Int = 0): ArrayMesh;
     public function commitToArrays(): Array<Dynamic>;
     public function createFrom(existing: Mesh, surface: Int): Void;
     public function createFromArrays(arrays: Array<Dynamic>, primitiveType: Int = 3): Void;

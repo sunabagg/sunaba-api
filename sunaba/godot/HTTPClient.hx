@@ -10,7 +10,7 @@ extern class HTTPClient extends RefCounted {
     @:native("__new")
     public function new();
     public function close(): Void;
-    public function connectToHost(host: String, port: Int = -1, tlsOptions: TLSOptions): Int;
+    public function connectToHost(host: String, port: Int = -1, ?tlsOptions: TLSOptions): Int;
     public function getResponseBodyLength(): Int;
     public function getResponseCode(): Int;
     public function getResponseHeaders(): PackedStringArray;
@@ -21,7 +21,7 @@ extern class HTTPClient extends RefCounted {
     public function poll(): Int;
     public function queryStringFromDict(fields: Map<Dynamic, Dynamic>): String;
     public function readResponseBodyChunk(): PackedByteArray;
-    public function request(method: Int, url: String, headers: PackedStringArray, body: String): Int;
+    public function request(method: Int, url: String, headers: PackedStringArray, ?body: String): Int;
     public function requestRaw(method: Int, url: String, headers: PackedStringArray, body: PackedByteArray): Int;
     public function setHttpProxy(host: String, port: Int): Void;
     public function setHttpsProxy(host: String, port: Int): Void;

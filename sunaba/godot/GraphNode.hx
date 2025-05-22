@@ -30,7 +30,7 @@ extern class GraphNode extends GraphElement {
     public function isSlotDrawStylebox(slotIndex: Int): Bool;
     public function isSlotEnabledLeft(slotIndex: Int): Bool;
     public function isSlotEnabledRight(slotIndex: Int): Bool;
-    public function setSlot(slotIndex: Int, enableLeftPort: Bool, typeLeft: Int, colorLeft: Color, enableRightPort: Bool, typeRight: Int, colorRight: Color, customIconLeft: Texture2D, customIconRight: Texture2D, drawStylebox: Bool = true): Void;
+    public function setSlot(slotIndex: Int, enableLeftPort: Bool, typeLeft: Int, colorLeft: Color, enableRightPort: Bool, typeRight: Int, colorRight: Color, ?customIconLeft: Texture2D, ?customIconRight: Texture2D, drawStylebox: Bool = true): Void;
     public function setSlotColorLeft(slotIndex: Int, color: Color): Void;
     public function setSlotColorRight(slotIndex: Int, color: Color): Void;
     public function setSlotCustomIconLeft(slotIndex: Int, customIcon: Texture2D): Void;

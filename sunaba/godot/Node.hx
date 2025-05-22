@@ -23,15 +23,15 @@ extern class Node extends Object {
     public function addChild(node: Node, forceReadableName: Bool = false, internal: Int = 0): Void;
     public function addSibling(sibling: Node, forceReadableName: Bool = false): Void;
     public function addToGroup(group: StringName, persistent: Bool = false): Void;
-    public function atr(message: String, context: StringName): String;
-    public function atrN(message: String, pluralMessage: StringName, n: Int, context: StringName): String;
+    public function atr(message: String, ?context: StringName): String;
+    public function atrN(message: String, pluralMessage: StringName, n: Int, ?context: StringName): String;
     public function callDeferredThreadGroup(method: StringName): Variant;
     public function callThreadSafe(method: StringName): Variant;
     public function canProcess(): Bool;
     public function createTween(): Tween;
     public function duplicate(flags: Int = 15): Node;
     public function findChild(pattern: String, recursive: Bool = true, owned: Bool = true): Node;
-    public function findChildren(pattern: String, type: String, recursive: Bool = true, owned: Bool = true): Dynamic;
+    public function findChildren(pattern: String, ?type: String, recursive: Bool = true, owned: Bool = true): Dynamic;
     public function findParent(pattern: String): Node;
     public function getChild(idx: Int, includeInternal: Bool = false): Node;
     public function getChildCount(includeInternal: Bool = false): Int;
@@ -82,7 +82,7 @@ extern class Node extends Object {
     public static function printOrphanNodes(): Void;
     public function printTree(): Void;
     public function printTreePretty(): Void;
-    public function propagateCall(method: StringName, args: Array<Dynamic>, parentFirst: Bool = false): Void;
+    public function propagateCall(method: StringName, ?args: Array<Dynamic>, parentFirst: Bool = false): Void;
     public function propagateNotification(what: Int): Void;
     public function queueFree(): Void;
     public function removeChild(node: Node): Void;

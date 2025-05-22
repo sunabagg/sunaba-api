@@ -51,8 +51,8 @@ extern class AnimatedSprite3D extends SpriteBase3D {
     public function getPlayingSpeed(): Float;
     public function isPlaying(): Bool;
     public function pause(): Void;
-    public function play(name: StringName, customSpeed: Float = 1.0, fromEnd: Bool = false): Void;
-    public function playBackwards(name: StringName): Void;
+    public function play(?name: StringName, customSpeed: Float = 1.0, fromEnd: Bool = false): Void;
+    public function playBackwards(?name: StringName): Void;
     public function setFrameAndProgress(frame: Int, progress: Float): Void;
     public function stop(): Void;
     public var animationChanged: NativeEvent;

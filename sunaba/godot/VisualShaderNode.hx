@@ -14,5 +14,5 @@ extern class VisualShaderNode extends Resource {
     public function getInputPortDefaultValue(port: Int): Variant;
     public function removeInputPortDefaultValue(port: Int): Void;
     public function setDefaultInputValues(values: Array<Dynamic>): Void;
-    public function setInputPortDefaultValue(port: Int, value: Variant, prevValue: Variant): Void;
+    public function setInputPortDefaultValue(port: Int, value: Variant, ?prevValue: Variant): Void;
 }

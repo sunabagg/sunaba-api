@@ -36,11 +36,11 @@ extern class MeshInstance3D extends GeometryInstance3D {
     public var skin: Skin;
     @:native("__new")
     public function new();
-    public function bakeMeshFromCurrentBlendShapeMix(existing: ArrayMesh): ArrayMesh;
-    public function bakeMeshFromCurrentSkeletonPose(existing: ArrayMesh): ArrayMesh;
+    public function bakeMeshFromCurrentBlendShapeMix(?existing: ArrayMesh): ArrayMesh;
+    public function bakeMeshFromCurrentSkeletonPose(?existing: ArrayMesh): ArrayMesh;
     public function createConvexCollision(clean: Bool = true, simplify: Bool = false): Void;
     public function createDebugTangents(): Void;
-    public function createMultipleConvexCollisions(settings: MeshConvexDecompositionSettings): Void;
+    public function createMultipleConvexCollisions(?settings: MeshConvexDecompositionSettings): Void;
     public function createTrimeshCollision(): Void;
     public function findBlendShapeByName(name: StringName): Int;
     public function getActiveMaterial(surface: Int): Material;

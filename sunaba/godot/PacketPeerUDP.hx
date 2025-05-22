@@ -6,7 +6,7 @@ import sunaba.core.NativeEvent;
 extern class PacketPeerUDP extends PacketPeer {
     @:native("__new")
     public function new();
-    public function bind(port: Int, bindAddress: String, recvBufSize: Int = 65536): Int;
+    public function bind(port: Int, ?bindAddress: String, recvBufSize: Int = 65536): Int;
     public function close(): Void;
     public function connectToHost(host: String, port: Int): Int;
     public function getLocalPort(): Int;

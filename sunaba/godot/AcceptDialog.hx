@@ -47,7 +47,7 @@ extern class AcceptDialog extends Window {
     public var okButtonText: String;
     @:native("__new")
     public function new();
-    public function addButton(text: String, right: Bool = false, action: String): Button;
+    public function addButton(text: String, right: Bool = false, ?action: String): Button;
     public function addCancelButton(name: String): Button;
     public function getLabel(): Label;
     public function getOkButton(): Button;

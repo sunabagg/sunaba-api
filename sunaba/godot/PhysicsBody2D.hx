@@ -17,5 +17,5 @@ extern class PhysicsBody2D extends CollisionObject2D {
     public function getGravity(): Vector2;
     public function moveAndCollide(motion: GdVector2, testOnly: Bool = false, safeMargin: Float = 0.08, recoveryAsCollision: Bool = false): KinematicCollision2D;
     public function removeCollisionExceptionWith(body: Node): Void;
-    public function testMove(from: Transform2D, motion: GdVector2, collision: KinematicCollision2D, safeMargin: Float = 0.08, recoveryAsCollision: Bool = false): Bool;
+    public function testMove(from: Transform2D, motion: GdVector2, ?collision: KinematicCollision2D, safeMargin: Float = 0.08, recoveryAsCollision: Bool = false): Bool;
 }

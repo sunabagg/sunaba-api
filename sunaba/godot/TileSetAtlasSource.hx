@@ -13,7 +13,7 @@ extern class TileSetAtlasSource extends TileSetSource {
     public function new();
     public function clearTilesOutsideTexture(): Void;
     public function createAlternativeTile(atlasCoords: GdVector2i, alternativeIdOverride: Int = -1): Int;
-    public function createTile(atlasCoords: GdVector2i, size: GdVector2i): Void;
+    public function createTile(atlasCoords: GdVector2i, ?size: GdVector2i): Void;
     public function getAtlasGridSize(): Vector2i;
     public function getNextAlternativeTileId(atlasCoords: GdVector2i): Int;
     public function getRuntimeTexture(): Texture2D;
@@ -30,9 +30,9 @@ extern class TileSetAtlasSource extends TileSetSource {
     public function getTileSizeInAtlas(atlasCoords: GdVector2i): Vector2i;
     public function getTileTextureRegion(atlasCoords: GdVector2i, frame: Int = 0): Rect2i;
     public function getTilesToBeRemovedOnChange(texture: Texture2D, margins: GdVector2i, separation: GdVector2i, textureRegionSize: GdVector2i): PackedVector2Array;
-    public function hasRoomForTile(atlasCoords: GdVector2i, size: GdVector2i, animationColumns: Int, animationSeparation: GdVector2i, framesCount: Int, ignoredTile: GdVector2i): Bool;
+    public function hasRoomForTile(atlasCoords: GdVector2i, size: GdVector2i, animationColumns: Int, animationSeparation: GdVector2i, framesCount: Int, ?ignoredTile: GdVector2i): Bool;
     public function hasTilesOutsideTexture(): Bool;
-    public function moveTileInAtlas(atlasCoords: GdVector2i, newAtlasCoords: GdVector2i, newSize: GdVector2i): Void;
+    public function moveTileInAtlas(atlasCoords: GdVector2i, ?newAtlasCoords: GdVector2i, ?newSize: GdVector2i): Void;
     public function removeAlternativeTile(atlasCoords: GdVector2i, alternativeTile: Int): Void;
     public function removeTile(atlasCoords: GdVector2i): Void;
     public function setAlternativeTileId(atlasCoords: GdVector2i, alternativeTile: Int, newId: Int): Void;

@@ -34,7 +34,7 @@ extern class TileMap extends Node2D {
     public function getPattern(layer: Int, coordsArray: Dynamic): TileMapPattern;
     public function getSurroundingCells(coords: GdVector2i): Dynamic;
     public function getUsedCells(layer: Int): Dynamic;
-    public function getUsedCellsById(layer: Int, sourceId: Int = -1, atlasCoords: GdVector2i, alternativeTile: Int = -1): Dynamic;
+    public function getUsedCellsById(layer: Int, sourceId: Int = -1, ?atlasCoords: GdVector2i, alternativeTile: Int = -1): Dynamic;
     public function getUsedRect(): Rect2i;
     public function isCellFlippedH(layer: Int, coords: GdVector2i, useProxies: Bool = false): Bool;
     public function isCellFlippedV(layer: Int, coords: GdVector2i, useProxies: Bool = false): Bool;
@@ -48,7 +48,7 @@ extern class TileMap extends Node2D {
     public function moveLayer(layer: Int, toPosition: Int): Void;
     public function notifyRuntimeTileDataUpdate(layer: Int = -1): Void;
     public function removeLayer(layer: Int): Void;
-    public function setCell(layer: Int, coords: GdVector2i, sourceId: Int = -1, atlasCoords: GdVector2i, alternativeTile: Int = 0): Void;
+    public function setCell(layer: Int, coords: GdVector2i, sourceId: Int = -1, ?atlasCoords: GdVector2i, alternativeTile: Int = 0): Void;
     public function setCellsTerrainConnect(layer: Int, cells: Dynamic, terrainSet: Int, terrain: Int, ignoreEmptyTerrains: Bool = true): Void;
     public function setCellsTerrainPath(layer: Int, path: Dynamic, terrainSet: Int, terrain: Int, ignoreEmptyTerrains: Bool = true): Void;
     public function setLayerEnabled(layer: Int, enabled: Bool): Void;

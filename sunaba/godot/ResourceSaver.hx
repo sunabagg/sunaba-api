@@ -10,5 +10,5 @@ extern class ResourceSaver extends Object {
     public function getRecognizedExtensions(type: Resource): PackedStringArray;
     public function getResourceIdForPath(path: String, generate: Bool = false): Int;
     public function removeResourceFormatSaver(formatSaver: ResourceFormatSaver): Void;
-    public function save(resource: Resource, path: String, flags: Int = 0): Int;
+    public function save(resource: Resource, ?path: String, flags: Int = 0): Int;
 }

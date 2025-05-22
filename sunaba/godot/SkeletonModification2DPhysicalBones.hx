@@ -10,6 +10,6 @@ extern class SkeletonModification2DPhysicalBones extends SkeletonModification2D 
     public function fetchPhysicalBones(): Void;
     public function getPhysicalBoneNode(jointIdx: Int): NodePath;
     public function setPhysicalBoneNode(jointIdx: Int, physicalbone2dNode: NodePath): Void;
-    public function startSimulation(bones: Dynamic): Void;
-    public function stopSimulation(bones: Dynamic): Void;
+    public function startSimulation(?bones: Dynamic): Void;
+    public function stopSimulation(?bones: Dynamic): Void;
 }

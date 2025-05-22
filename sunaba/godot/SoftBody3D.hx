@@ -27,5 +27,5 @@ extern class SoftBody3D extends MeshInstance3D {
     public function removeCollisionExceptionWith(body: Node): Void;
     public function setCollisionLayerValue(layerNumber: Int, value: Bool): Void;
     public function setCollisionMaskValue(layerNumber: Int, value: Bool): Void;
-    public function setPointPinned(pointIndex: Int, pinned: Bool, attachmentPath: NodePath, insertAt: Int = -1): Void;
+    public function setPointPinned(pointIndex: Int, pinned: Bool, ?attachmentPath: NodePath, insertAt: Int = -1): Void;
 }

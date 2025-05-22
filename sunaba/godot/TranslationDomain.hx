@@ -20,6 +20,6 @@ extern class TranslationDomain extends RefCounted {
     public function getTranslationObject(locale: String): Translation;
     public function pseudolocalize(message: StringName): StringName;
     public function removeTranslation(translation: Translation): Void;
-    public function translate(message: StringName, context: StringName): StringName;
-    public function translatePlural(message: StringName, messagePlural: StringName, n: Int, context: StringName): StringName;
+    public function translate(message: StringName, ?context: StringName): StringName;
+    public function translatePlural(message: StringName, messagePlural: StringName, n: Int, ?context: StringName): StringName;
 }
