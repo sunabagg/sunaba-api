@@ -9,4 +9,5 @@ extern class SceneDocument extends NativeObject {
     @:native("__new")
     public function new();
     public static function createScene(node : Node): SceneDocument;
+    public function toJson(): String;
 }
