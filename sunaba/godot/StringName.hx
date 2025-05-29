@@ -114,4 +114,5 @@ extern class StringName extends NativeObject {
     public function validateNodeName(): String;
     public function xmlEscape(escapeQuotes: Bool = false): String;
     public function xmlUnescape(): String;
+    public function toString(): String;
 }
