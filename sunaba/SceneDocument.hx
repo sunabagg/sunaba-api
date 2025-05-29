@@ -10,4 +10,5 @@ extern class SceneDocument extends NativeObject {
     public function new();
     public static function createScene(node : Node): SceneDocument;
     public function toJson(): String;
+    public static function fromJson(json: String): SceneDocument;
 }
