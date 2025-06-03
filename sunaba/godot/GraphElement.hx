@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.GraphElement")
 extern class GraphElement extends Container {
@@ -11,12 +11,12 @@ extern class GraphElement extends Container {
     public var selected: Bool;
     @:native("__new")
     public function new();
-    public var deleteRequest: NativeEvent;
-    public var dragged: NativeEvent;
-    public var nodeDeselected: NativeEvent;
-    public var nodeSelected: NativeEvent;
-    public var positionOffsetChanged: NativeEvent;
-    public var raiseRequest: NativeEvent;
-    public var resizeEnd: NativeEvent;
-    public var resizeRequest: NativeEvent;
+    public var deleteRequest: Event;
+    public var dragged: Event;
+    public var nodeDeselected: Event;
+    public var nodeSelected: Event;
+    public var positionOffsetChanged: Event;
+    public var raiseRequest: Event;
+    public var resizeEnd: Event;
+    public var resizeRequest: Event;
 }

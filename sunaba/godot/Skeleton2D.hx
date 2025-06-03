@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.Skeleton2D")
 extern class Skeleton2D extends Node2D {
@@ -14,5 +14,5 @@ extern class Skeleton2D extends Node2D {
     public function getSkeleton(): RID;
     public function setBoneLocalPoseOverride(boneIdx: Int, overridePose: Transform2D, strength: Float, persistent: Bool): Void;
     public function setModificationStack(modificationStack: SkeletonModificationStack2D): Void;
-    public var boneSetupChanged: NativeEvent;
+    public var boneSetupChanged: Event;
 }

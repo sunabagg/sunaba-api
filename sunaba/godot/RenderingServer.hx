@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.RenderingServer")
 extern class RenderingServer extends Object {
@@ -523,6 +523,6 @@ extern class RenderingServer extends Object {
     public static function voxelGiSetPropagation(voxelGi: RID, amount: Float): Void;
     public static function voxelGiSetQuality(quality: Int): Void;
     public static function voxelGiSetUseTwoBounces(voxelGi: RID, enable: Bool): Void;
-    public var framePostDraw: NativeEvent;
-    public var framePreDraw: NativeEvent;
+    public var framePostDraw: Event;
+    public var framePreDraw: Event;
 }

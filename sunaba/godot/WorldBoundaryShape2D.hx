@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.WorldBoundaryShape2D")
 extern class WorldBoundaryShape2D extends Shape2D {

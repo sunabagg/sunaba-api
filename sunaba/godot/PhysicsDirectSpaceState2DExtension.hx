@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.PhysicsDirectSpaceState2DExtension")
 extern class PhysicsDirectSpaceState2DExtension extends PhysicsDirectSpaceState2D {

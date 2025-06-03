@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.CameraServer")
 extern class CameraServer extends Object {
@@ -11,6 +11,6 @@ extern class CameraServer extends Object {
     public static function getFeed(index: Int): CameraFeed;
     public static function getFeedCount(): Int;
     public static function removeFeed(feed: CameraFeed): Void;
-    public var cameraFeedAdded: NativeEvent;
-    public var cameraFeedRemoved: NativeEvent;
+    public var cameraFeedAdded: Event;
+    public var cameraFeedRemoved: Event;
 }

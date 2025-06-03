@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.InputEventMouse")
 extern class InputEventMouse extends InputEventWithModifiers {

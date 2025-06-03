@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.PortableCompressedTexture2D")
 extern class PortableCompressedTexture2D extends Texture2D {

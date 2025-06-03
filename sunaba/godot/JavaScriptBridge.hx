@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.JavaScriptBridge")
 extern class JavaScriptBridge extends Object {
@@ -16,5 +16,5 @@ extern class JavaScriptBridge extends Object {
     public function jsBufferToPackedByteArray(javascriptBuffer: JavaScriptObject): PackedByteArray;
     public function pwaNeedsUpdate(): Bool;
     public function pwaUpdate(): Int;
-    public var pwaUpdateAvailable: NativeEvent;
+    public var pwaUpdateAvailable: Event;
 }

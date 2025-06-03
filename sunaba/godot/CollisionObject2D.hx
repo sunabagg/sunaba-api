@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.CollisionObject2D")
 extern class CollisionObject2D extends Node2D {
@@ -35,9 +35,9 @@ extern class CollisionObject2D extends Node2D {
     public function shapeOwnerSetOneWayCollision(ownerId: Int, enable: Bool): Void;
     public function shapeOwnerSetOneWayCollisionMargin(ownerId: Int, margin: Float): Void;
     public function shapeOwnerSetTransform(ownerId: Int, transform: Transform2D): Void;
-    public var inputEvent: NativeEvent;
-    public var mouseEntered: NativeEvent;
-    public var mouseExited: NativeEvent;
-    public var mouseShapeEntered: NativeEvent;
-    public var mouseShapeExited: NativeEvent;
+    public var inputEvent: Event;
+    public var mouseEntered: Event;
+    public var mouseExited: Event;
+    public var mouseShapeEntered: Event;
+    public var mouseShapeExited: Event;
 }

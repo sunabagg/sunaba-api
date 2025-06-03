@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.ConcavePolygonShape2D")
 extern class ConcavePolygonShape2D extends Shape2D {

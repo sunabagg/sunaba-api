@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class MissingNodeProcessMode {
     public static var Inherit: Int = 0;

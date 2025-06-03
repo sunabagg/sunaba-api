@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.ShapeCast2D")
 extern class ShapeCast2D extends Node2D {

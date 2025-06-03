@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class AudioEffectBandLimitFilterDb {
     public static var Filter6Db: Int = 0;

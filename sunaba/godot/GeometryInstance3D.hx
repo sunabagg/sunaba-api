@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.GeometryInstance3D")
 extern class GeometryInstance3D extends VisualInstance3D {

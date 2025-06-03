@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.MultiplayerPeer")
 extern class MultiplayerPeer extends PacketPeer {
@@ -20,6 +20,6 @@ extern class MultiplayerPeer extends PacketPeer {
     public function isServerRelaySupported(): Bool;
     public function poll(): Void;
     public function setTargetPeer(id: Int): Void;
-    public var peerConnected: NativeEvent;
-    public var peerDisconnected: NativeEvent;
+    public var peerConnected: Event;
+    public var peerDisconnected: Event;
 }

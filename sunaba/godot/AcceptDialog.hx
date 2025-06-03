@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class AcceptDialogMode {
     public static var Windowed: Int = 0;
@@ -53,7 +53,7 @@ extern class AcceptDialog extends Window {
     public function getOkButton(): Button;
     public function registerTextEnter(lineEdit: LineEdit): Void;
     public function removeButton(button: Button): Void;
-    public var canceled: NativeEvent;
-    public var confirmed: NativeEvent;
-    public var customAction: NativeEvent;
+    public var canceled: Event;
+    public var confirmed: Event;
+    public var customAction: Event;
 }

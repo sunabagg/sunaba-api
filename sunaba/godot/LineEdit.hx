@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class LineEditLayoutDirection {
     public static var Inherited: Int = 0;
@@ -138,8 +138,8 @@ extern class LineEdit extends Control {
     public function select(from: Int = 0, to: Int = -1): Void;
     public function selectAll(): Void;
     public function unedit(): Void;
-    public var editingToggled: NativeEvent;
-    public var textChangeRejected: NativeEvent;
-    public var textChanged: NativeEvent;
-    public var textSubmitted: NativeEvent;
+    public var editingToggled: Event;
+    public var textChangeRejected: Event;
+    public var textChanged: Event;
+    public var textSubmitted: Event;
 }

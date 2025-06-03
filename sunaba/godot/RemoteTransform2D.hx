@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.RemoteTransform2D")
 extern class RemoteTransform2D extends Node2D {

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.EditorNode3DGizmoPlugin")
 extern class EditorNode3DGizmoPlugin extends Resource {

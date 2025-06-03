@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.EditorSelection")
 extern class EditorSelection extends Object {
@@ -11,5 +11,5 @@ extern class EditorSelection extends Object {
     public function getSelectedNodes(): Dynamic;
     public function getTransformableSelectedNodes(): Dynamic;
     public function removeNode(node: Node): Void;
-    public var selectionChanged: NativeEvent;
+    public var selectionChanged: Event;
 }

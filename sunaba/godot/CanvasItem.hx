@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class CanvasItemProcessMode {
     public static var Inherit: Int = 0;
@@ -112,8 +112,8 @@ extern class CanvasItem extends Node {
     public function setNotifyTransform(enable: Bool): Void;
     public function setVisibilityLayerBit(layer: Int, enabled: Bool): Void;
     public function show(): Void;
-    public var draw: NativeEvent;
-    public var hidden: NativeEvent;
-    public var itemRectChanged: NativeEvent;
-    public var visibilityChanged: NativeEvent;
+    public var draw: Event;
+    public var hidden: Event;
+    public var itemRectChanged: Event;
+    public var visibilityChanged: Event;
 }

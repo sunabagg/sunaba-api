@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class OptionButtonAlignment {
     public static var Left: Int = 0;
@@ -80,6 +80,6 @@ extern class OptionButton extends Button {
     public function setItemText(idx: Int, text: String): Void;
     public function setItemTooltip(idx: Int, tooltip: String): Void;
     public function showPopup(): Void;
-    public var itemFocused: NativeEvent;
-    public var itemSelected: NativeEvent;
+    public var itemFocused: Event;
+    public var itemSelected: Event;
 }

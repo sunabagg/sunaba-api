@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class VisualShaderNodeTextureParameterQualifier {
     public static var None: Int = 0;

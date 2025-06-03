@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.VisualShaderNodeVec2Constant")
 extern class VisualShaderNodeVec2Constant extends VisualShaderNodeConstant {

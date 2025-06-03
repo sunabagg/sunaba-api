@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.ProjectSettings")
 extern class ProjectSettings extends Object {
@@ -876,5 +876,5 @@ extern class ProjectSettings extends Object {
     public function setOrder(name: String, position: Int): Void;
     public function setRestartIfChanged(name: String, restart: Bool): Void;
     public function setSetting(name: String, value: Variant): Void;
-    public var settingsChanged: NativeEvent;
+    public var settingsChanged: Event;
 }

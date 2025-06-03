@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.SkeletonModification2DStackHolder")
 extern class SkeletonModification2DStackHolder extends SkeletonModification2D {

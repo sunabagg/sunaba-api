@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.CollisionPolygon2D")
 extern class CollisionPolygon2D extends Node2D {

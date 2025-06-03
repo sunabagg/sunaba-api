@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.EditorDebuggerSession")
 extern class EditorDebuggerSession extends RefCounted {
@@ -14,8 +14,8 @@ extern class EditorDebuggerSession extends RefCounted {
     public function sendMessage(message: String, ?data: Array<Dynamic>): Void;
     public function setBreakpoint(path: String, line: Int, enabled: Bool): Void;
     public function toggleProfiler(profiler: String, enable: Bool, ?data: Array<Dynamic>): Void;
-    public var breaked: NativeEvent;
-    public var continued: NativeEvent;
-    public var started: NativeEvent;
-    public var stopped: NativeEvent;
+    public var breaked: Event;
+    public var continued: Event;
+    public var started: Event;
+    public var stopped: Event;
 }

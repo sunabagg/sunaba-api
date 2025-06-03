@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.MultiplayerAPI")
 extern class MultiplayerAPI extends RefCounted {
@@ -19,9 +19,9 @@ extern class MultiplayerAPI extends RefCounted {
     public function poll(): Int;
     public function rpc(peer: Int, object: Object, method: StringName, ?arguments: Array<Dynamic>): Int;
     public static function setDefaultInterface(interfaceName: StringName): Void;
-    public var connectedToServer: NativeEvent;
-    public var connectionFailed: NativeEvent;
-    public var peerConnected: NativeEvent;
-    public var peerDisconnected: NativeEvent;
-    public var serverDisconnected: NativeEvent;
+    public var connectedToServer: Event;
+    public var connectionFailed: Event;
+    public var peerConnected: Event;
+    public var peerDisconnected: Event;
+    public var serverDisconnected: Event;
 }

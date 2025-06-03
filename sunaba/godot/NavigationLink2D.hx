@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.NavigationLink2D")
 extern class NavigationLink2D extends Node2D {

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class VehicleBody3DCenterOfMassMode {
     public static var Auto: Int = 0;

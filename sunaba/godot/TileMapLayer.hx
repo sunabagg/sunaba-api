@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.TileMapLayer")
 extern class TileMapLayer extends Node2D {
@@ -47,5 +47,5 @@ extern class TileMapLayer extends Node2D {
     public function setNavigationMap(map: RID): Void;
     public function setPattern(position: GdVector2i, pattern: TileMapPattern): Void;
     public function updateInternals(): Void;
-    public var changed: NativeEvent;
+    public var changed: Event;
 }

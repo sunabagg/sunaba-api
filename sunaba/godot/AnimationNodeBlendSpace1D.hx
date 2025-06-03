@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.AnimationNodeBlendSpace1D")
 extern class AnimationNodeBlendSpace1D extends AnimationRootNode {

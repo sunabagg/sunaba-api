@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class ContainerLayoutDirection {
     public static var Inherited: Int = 0;
@@ -85,6 +85,6 @@ extern class Container extends Control {
     public function new();
     public function fitChildInRect(child: Control, rect: Rect2): Void;
     public function queueSort(): Void;
-    public var preSortChildren: NativeEvent;
-    public var sortChildren: NativeEvent;
+    public var preSortChildren: Event;
+    public var sortChildren: Event;
 }

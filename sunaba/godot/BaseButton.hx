@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class BaseButtonLayoutDirection {
     public static var Inherited: Int = 0;
@@ -96,8 +96,8 @@ extern class BaseButton extends Control {
     public function getDrawMode(): Int;
     public function isHovered(): Bool;
     public function setPressedNoSignal(pressed: Bool): Void;
-    public var buttonDown: NativeEvent;
-    public var buttonUp: NativeEvent;
-    public var pressed: NativeEvent;
-    public var toggled: NativeEvent;
+    public var buttonDown: Event;
+    public var buttonUp: Event;
+    public var pressed: Event;
+    public var toggled: Event;
 }

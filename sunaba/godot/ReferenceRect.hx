@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class ReferenceRectLayoutDirection {
     public static var Inherited: Int = 0;

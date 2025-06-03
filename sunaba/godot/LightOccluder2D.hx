@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.LightOccluder2D")
 extern class LightOccluder2D extends Node2D {

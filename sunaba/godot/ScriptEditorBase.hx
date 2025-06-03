@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.ScriptEditorBase")
 extern class ScriptEditorBase extends VBoxContainer {
@@ -8,14 +8,14 @@ extern class ScriptEditorBase extends VBoxContainer {
     public function new();
     public function addSyntaxHighlighter(highlighter: EditorSyntaxHighlighter): Void;
     public function getBaseEditor(): Control;
-    public var editedScriptChanged: NativeEvent;
-    public var goToHelp: NativeEvent;
-    public var goToMethod: NativeEvent;
-    public var nameChanged: NativeEvent;
-    public var replaceInFilesRequested: NativeEvent;
-    public var requestHelp: NativeEvent;
-    public var requestOpenScriptAtLine: NativeEvent;
-    public var requestSaveHistory: NativeEvent;
-    public var requestSavePreviousState: NativeEvent;
-    public var searchInFilesRequested: NativeEvent;
+    public var editedScriptChanged: Event;
+    public var goToHelp: Event;
+    public var goToMethod: Event;
+    public var nameChanged: Event;
+    public var replaceInFilesRequested: Event;
+    public var requestHelp: Event;
+    public var requestOpenScriptAtLine: Event;
+    public var requestSaveHistory: Event;
+    public var requestSavePreviousState: Event;
+    public var searchInFilesRequested: Event;
 }

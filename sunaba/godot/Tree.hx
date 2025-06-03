@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class TreeLayoutDirection {
     public static var Inherited: Int = 0;
@@ -133,19 +133,19 @@ extern class Tree extends Control {
     public function setColumnTitleDirection(column: Int, direction: Int): Void;
     public function setColumnTitleLanguage(column: Int, language: String): Void;
     public function setSelected(item: TreeItem, column: Int): Void;
-    public var buttonClicked: NativeEvent;
-    public var cellSelected: NativeEvent;
-    public var checkPropagatedToItem: NativeEvent;
-    public var columnTitleClicked: NativeEvent;
-    public var customItemClicked: NativeEvent;
-    public var customPopupEdited: NativeEvent;
-    public var emptyClicked: NativeEvent;
-    public var itemActivated: NativeEvent;
-    public var itemCollapsed: NativeEvent;
-    public var itemEdited: NativeEvent;
-    public var itemIconDoubleClicked: NativeEvent;
-    public var itemMouseSelected: NativeEvent;
-    public var itemSelected: NativeEvent;
-    public var multiSelected: NativeEvent;
-    public var nothingSelected: NativeEvent;
+    public var buttonClicked: Event;
+    public var cellSelected: Event;
+    public var checkPropagatedToItem: Event;
+    public var columnTitleClicked: Event;
+    public var customItemClicked: Event;
+    public var customPopupEdited: Event;
+    public var emptyClicked: Event;
+    public var itemActivated: Event;
+    public var itemCollapsed: Event;
+    public var itemEdited: Event;
+    public var itemIconDoubleClicked: Event;
+    public var itemMouseSelected: Event;
+    public var itemSelected: Event;
+    public var multiSelected: Event;
+    public var nothingSelected: Event;
 }

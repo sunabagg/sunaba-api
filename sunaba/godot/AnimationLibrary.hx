@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.AnimationLibrary")
 extern class AnimationLibrary extends Resource {
@@ -13,8 +13,8 @@ extern class AnimationLibrary extends Resource {
     public function hasAnimation(name: StringName): Bool;
     public function removeAnimation(name: StringName): Void;
     public function renameAnimation(name: StringName, newname: StringName): Void;
-    public var animationAdded: NativeEvent;
-    public var animationChanged: NativeEvent;
-    public var animationRemoved: NativeEvent;
-    public var animationRenamed: NativeEvent;
+    public var animationAdded: Event;
+    public var animationChanged: Event;
+    public var animationRemoved: Event;
+    public var animationRenamed: Event;
 }

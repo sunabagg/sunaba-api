@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.CapsuleShape2D")
 extern class CapsuleShape2D extends Shape2D {

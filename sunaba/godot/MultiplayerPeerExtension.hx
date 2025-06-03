@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class MultiplayerPeerExtensionTransferMode {
     public static var Unreliable: Int = 0;

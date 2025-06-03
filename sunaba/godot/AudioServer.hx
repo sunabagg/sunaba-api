@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.AudioServer")
 extern class AudioServer extends Object {
@@ -55,6 +55,6 @@ extern class AudioServer extends Object {
     public static function setEnableTaggingUsedAudioStreams(enable: Bool): Void;
     public static function swapBusEffects(busIdx: Int, effectIdx: Int, byEffectIdx: Int): Void;
     public static function unlock(): Void;
-    public var busLayoutChanged: NativeEvent;
-    public var busRenamed: NativeEvent;
+    public var busLayoutChanged: Event;
+    public var busRenamed: Event;
 }

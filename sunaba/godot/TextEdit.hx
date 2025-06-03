@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class TextEditLayoutDirection {
     public static var Inherited: Int = 0;
@@ -279,11 +279,11 @@ extern class TextEdit extends Control {
     public function swapLines(fromLine: Int, toLine: Int): Void;
     public function tagSavedVersion(): Void;
     public function undo(): Void;
-    public var caretChanged: NativeEvent;
-    public var gutterAdded: NativeEvent;
-    public var gutterClicked: NativeEvent;
-    public var gutterRemoved: NativeEvent;
-    public var linesEditedFrom: NativeEvent;
-    public var textChanged: NativeEvent;
-    public var textSet: NativeEvent;
+    public var caretChanged: Event;
+    public var gutterAdded: Event;
+    public var gutterClicked: Event;
+    public var gutterRemoved: Event;
+    public var linesEditedFrom: Event;
+    public var textChanged: Event;
+    public var textSet: Event;
 }

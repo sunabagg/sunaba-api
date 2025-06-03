@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.NavigationRegion2D")
 extern class NavigationRegion2D extends Node2D {
@@ -21,6 +21,6 @@ extern class NavigationRegion2D extends Node2D {
     public function isBaking(): Bool;
     public function setNavigationLayerValue(layerNumber: Int, value: Bool): Void;
     public function setNavigationMap(navigationMap: RID): Void;
-    public var bakeFinished: NativeEvent;
-    public var navigationPolygonChanged: NativeEvent;
+    public var bakeFinished: Event;
+    public var navigationPolygonChanged: Event;
 }

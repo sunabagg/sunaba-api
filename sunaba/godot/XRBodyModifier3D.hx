@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.XRBodyModifier3D")
 extern class XRBodyModifier3D extends SkeletonModifier3D {

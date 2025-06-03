@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.SpringBoneCollisionSphere3D")
 extern class SpringBoneCollisionSphere3D extends SpringBoneCollision3D {

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class Node3DProcessMode {
     public static var Inherit: Int = 0;
@@ -92,5 +92,5 @@ extern class Node3D extends Node {
     public function translate(offset: GdVector3): Void;
     public function translateObjectLocal(offset: GdVector3): Void;
     public function updateGizmos(): Void;
-    public var visibilityChanged: NativeEvent;
+    public var visibilityChanged: Event;
 }

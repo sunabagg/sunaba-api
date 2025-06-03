@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.PacketPeerStream")
 extern class PacketPeerStream extends PacketPeer {

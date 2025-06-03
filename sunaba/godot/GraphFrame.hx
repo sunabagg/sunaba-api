@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.GraphFrame")
 extern class GraphFrame extends GraphElement {
@@ -13,5 +13,5 @@ extern class GraphFrame extends GraphElement {
     @:native("__new")
     public function new();
     public function getTitlebarHbox(): HBoxContainer;
-    public var autoshrinkChanged: NativeEvent;
+    public var autoshrinkChanged: Event;
 }

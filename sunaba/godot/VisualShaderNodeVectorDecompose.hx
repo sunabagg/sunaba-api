@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class VisualShaderNodeVectorDecomposeOpType {
     public static var Vector2D: Int = 0;

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class OfflineMultiplayerPeerTransferMode {
     public static var Unreliable: Int = 0;

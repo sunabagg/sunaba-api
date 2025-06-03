@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.GPUParticlesAttractorSphere3D")
 extern class GPUParticlesAttractorSphere3D extends GPUParticlesAttractor3D {

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class XRControllerTrackerHand {
     public static var Unknown: Int = 0;

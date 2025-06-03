@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class VisualShaderNodeTexture2DArraySource {
     public static var Texture: Int = 0;

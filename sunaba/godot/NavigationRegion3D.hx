@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class NavigationRegion3DRotationEditMode {
     public static var Euler: Int = 0;
@@ -36,6 +36,6 @@ extern class NavigationRegion3D extends Node3D {
     public function isBaking(): Bool;
     public function setNavigationLayerValue(layerNumber: Int, value: Bool): Void;
     public function setNavigationMap(navigationMap: RID): Void;
-    public var bakeFinished: NativeEvent;
-    public var navigationMeshChanged: NativeEvent;
+    public var bakeFinished: Event;
+    public var navigationMeshChanged: Event;
 }

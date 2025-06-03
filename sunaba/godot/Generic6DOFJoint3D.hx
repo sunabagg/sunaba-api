@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.Generic6DOFJoint3D")
 extern class Generic6DOFJoint3D extends Joint3D {

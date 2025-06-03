@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.PlaceholderTexture3D")
 extern class PlaceholderTexture3D extends Texture3D {

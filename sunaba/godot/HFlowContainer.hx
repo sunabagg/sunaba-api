@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class HFlowContainerAlignment {
     public static var Begin: Int = 0;

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.EditorSpinSlider")
 extern class EditorSpinSlider extends Range {
@@ -12,9 +12,9 @@ extern class EditorSpinSlider extends Range {
     public var suffix: String;
     @:native("__new")
     public function new();
-    public var grabbed: NativeEvent;
-    public var ungrabbed: NativeEvent;
-    public var updownPressed: NativeEvent;
-    public var valueFocusEntered: NativeEvent;
-    public var valueFocusExited: NativeEvent;
+    public var grabbed: Event;
+    public var ungrabbed: Event;
+    public var updownPressed: Event;
+    public var valueFocusEntered: Event;
+    public var valueFocusExited: Event;
 }

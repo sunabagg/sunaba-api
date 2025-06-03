@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.SeparationRayShape2D")
 extern class SeparationRayShape2D extends Shape2D {

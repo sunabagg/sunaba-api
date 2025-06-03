@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class SeparatorLayoutDirection {
     public static var Inherited: Int = 0;

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.ScriptEditor")
 extern class ScriptEditor extends PanelContainer {
@@ -17,6 +17,6 @@ extern class ScriptEditor extends PanelContainer {
     public function registerSyntaxHighlighter(syntaxHighlighter: EditorSyntaxHighlighter): Void;
     public function unregisterSyntaxHighlighter(syntaxHighlighter: EditorSyntaxHighlighter): Void;
     public function updateDocsFromScript(script: Script): Void;
-    public var editorScriptChanged: NativeEvent;
-    public var scriptClose: NativeEvent;
+    public var editorScriptChanged: Event;
+    public var scriptClose: Event;
 }

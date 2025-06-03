@@ -107,7 +107,7 @@ public class HaxeExternGenerator
         sb.AppendLine("package sunaba.godot;");
         sb.AppendLine();
 
-        sb.AppendLine("import sunaba.core.NativeEvent;");
+        sb.AppendLine("import sunaba.core.Event;");
 
         var inheritedClassName = doc.Root?.Attribute("inherits")?.Value;
 
@@ -241,7 +241,7 @@ public class HaxeExternGenerator
             
             if (!string.IsNullOrEmpty(signalName))
             {
-                sb.AppendLine($"    public var {ToCamelCase(signalName)}: NativeEvent;");
+                sb.AppendLine($"    public var {ToCamelCase(signalName)}: Event;");
             }
         }
     }

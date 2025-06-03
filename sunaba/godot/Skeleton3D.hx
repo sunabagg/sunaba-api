@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class Skeleton3DRotationEditMode {
     public static var Euler: Int = 0;
@@ -72,10 +72,10 @@ extern class Skeleton3D extends Node3D {
     public function setBonePoseScale(boneIdx: Int, scale: GdVector3): Void;
     public function setBoneRest(boneIdx: Int, rest: Transform3D): Void;
     public function unparentBoneAndRest(boneIdx: Int): Void;
-    public var boneEnabledChanged: NativeEvent;
-    public var boneListChanged: NativeEvent;
-    public var poseUpdated: NativeEvent;
-    public var restUpdated: NativeEvent;
-    public var showRestOnlyChanged: NativeEvent;
-    public var skeletonUpdated: NativeEvent;
+    public var boneEnabledChanged: Event;
+    public var boneListChanged: Event;
+    public var poseUpdated: Event;
+    public var restUpdated: Event;
+    public var showRestOnlyChanged: Event;
+    public var skeletonUpdated: Event;
 }

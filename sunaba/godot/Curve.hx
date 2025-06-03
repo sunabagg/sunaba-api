@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.Curve")
 extern class Curve extends Resource {
@@ -32,6 +32,6 @@ extern class Curve extends Resource {
     public function setPointRightMode(index: Int, mode: Int): Void;
     public function setPointRightTangent(index: Int, tangent: Float): Void;
     public function setPointValue(index: Int, y: Float): Void;
-    public var domainChanged: NativeEvent;
-    public var rangeChanged: NativeEvent;
+    public var domainChanged: Event;
+    public var rangeChanged: Event;
 }

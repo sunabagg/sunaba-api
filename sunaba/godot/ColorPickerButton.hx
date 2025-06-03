@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class ColorPickerButtonAlignment {
     public static var Left: Int = 0;
@@ -53,7 +53,7 @@ extern class ColorPickerButton extends Button {
     public function new();
     public function getPicker(): ColorPicker;
     public function getPopup(): PopupPanel;
-    public var colorChanged: NativeEvent;
-    public var pickerCreated: NativeEvent;
-    public var popupClosed: NativeEvent;
+    public var colorChanged: Event;
+    public var pickerCreated: Event;
+    public var popupClosed: Event;
 }

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.TileData")
 extern class TileData extends Object {
@@ -49,5 +49,5 @@ extern class TileData extends Object {
     public function setOccluderPolygon(layerId: Int, polygonIndex: Int, polygon: OccluderPolygon2D): Void;
     public function setOccluderPolygonsCount(layerId: Int, polygonsCount: Int): Void;
     public function setTerrainPeeringBit(peeringBit: Int, terrain: Int): Void;
-    public var changed: NativeEvent;
+    public var changed: Event;
 }

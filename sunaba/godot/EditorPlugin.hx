@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.EditorPlugin")
 extern class EditorPlugin extends Node {
@@ -55,10 +55,10 @@ extern class EditorPlugin extends Node {
     public function setForceDrawOverForwardingEnabled(): Void;
     public function setInputEventForwardingAlwaysEnabled(): Void;
     public function updateOverlays(): Int;
-    public var mainScreenChanged: NativeEvent;
-    public var projectSettingsChanged: NativeEvent;
-    public var resourceSaved: NativeEvent;
-    public var sceneChanged: NativeEvent;
-    public var sceneClosed: NativeEvent;
-    public var sceneSaved: NativeEvent;
+    public var mainScreenChanged: Event;
+    public var projectSettingsChanged: Event;
+    public var resourceSaved: Event;
+    public var sceneChanged: Event;
+    public var sceneClosed: Event;
+    public var sceneSaved: Event;
 }

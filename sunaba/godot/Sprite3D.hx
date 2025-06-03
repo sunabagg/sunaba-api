@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class Sprite3DAxis {
     public static var X: Int = 0;
@@ -49,6 +49,6 @@ extern class Sprite3D extends SpriteBase3D {
     public var vframes: Int;
     @:native("__new")
     public function new();
-    public var frameChanged: NativeEvent;
-    public var textureChanged: NativeEvent;
+    public var frameChanged: Event;
+    public var textureChanged: Event;
 }

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class InputEventMouseMotionButtonMask {
     public static var Left: Int = 1;

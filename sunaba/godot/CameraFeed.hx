@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.CameraFeed")
 extern class CameraFeed extends RefCounted {
@@ -20,6 +20,6 @@ extern class CameraFeed extends RefCounted {
     public function setPosition(position: Int): Void;
     public function setRgbImage(rgbImage: Image): Void;
     public function setYcbcrImage(ycbcrImage: Image): Void;
-    public var formatChanged: NativeEvent;
-    public var frameChanged: NativeEvent;
+    public var formatChanged: Event;
+    public var frameChanged: Event;
 }

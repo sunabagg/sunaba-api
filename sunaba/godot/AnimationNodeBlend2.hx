@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.AnimationNodeBlend2")
 extern class AnimationNodeBlend2 extends AnimationNodeSync {

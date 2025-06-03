@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 import sunaba.core.NativeObject;
 
 @:native("godot.Object")
@@ -57,6 +57,6 @@ extern class Object extends NativeObject {
     public function toString(): String;
     public function tr(message: StringName, ?context: StringName): String;
     public function trN(message: StringName, pluralMessage: StringName, n: Int, ?context: StringName): String;
-    public var propertyListChanged: NativeEvent;
-    public var scriptChanged: NativeEvent;
+    public var propertyListChanged: Event;
+    public var scriptChanged: Event;
 }

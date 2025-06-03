@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.PhysicsDirectBodyState2D")
 extern class PhysicsDirectBodyState2D extends Object {

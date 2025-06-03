@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.VisualShaderNodeInput")
 extern class VisualShaderNodeInput extends VisualShaderNode {
@@ -8,5 +8,5 @@ extern class VisualShaderNodeInput extends VisualShaderNode {
     @:native("__new")
     public function new();
     public function getInputRealName(): String;
-    public var inputTypeChanged: NativeEvent;
+    public var inputTypeChanged: Event;
 }

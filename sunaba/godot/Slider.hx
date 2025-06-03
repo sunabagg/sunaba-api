@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.Slider")
 extern class Slider extends Range {
@@ -10,6 +10,6 @@ extern class Slider extends Range {
     public var ticksOnBorders: Bool;
     @:native("__new")
     public function new();
-    public var dragEnded: NativeEvent;
-    public var dragStarted: NativeEvent;
+    public var dragEnded: Event;
+    public var dragStarted: Event;
 }

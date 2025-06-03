@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class CollisionObject3DRotationEditMode {
     public static var Euler: Int = 0;
@@ -47,7 +47,7 @@ extern class CollisionObject3D extends Node3D {
     public function shapeOwnerRemoveShape(ownerId: Int, shapeId: Int): Void;
     public function shapeOwnerSetDisabled(ownerId: Int, disabled: Bool): Void;
     public function shapeOwnerSetTransform(ownerId: Int, transform: Transform3D): Void;
-    public var inputEvent: NativeEvent;
-    public var mouseEntered: NativeEvent;
-    public var mouseExited: NativeEvent;
+    public var inputEvent: Event;
+    public var mouseEntered: Event;
+    public var mouseExited: Event;
 }

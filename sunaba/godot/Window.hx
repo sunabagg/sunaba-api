@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class WindowMsaa2D {
     public static var Disabled: Int = 0;
@@ -271,18 +271,18 @@ extern class Window extends Viewport {
     public function show(): Void;
     public function startDrag(): Void;
     public function startResize(edge: Int): Void;
-    public var aboutToPopup: NativeEvent;
-    public var closeRequested: NativeEvent;
-    public var dpiChanged: NativeEvent;
-    public var filesDropped: NativeEvent;
-    public var focusEntered: NativeEvent;
-    public var focusExited: NativeEvent;
-    public var goBackRequested: NativeEvent;
-    public var mouseEntered: NativeEvent;
-    public var mouseExited: NativeEvent;
-    public var themeChanged: NativeEvent;
-    public var titleChanged: NativeEvent;
-    public var titlebarChanged: NativeEvent;
-    public var visibilityChanged: NativeEvent;
-    public var windowInput: NativeEvent;
+    public var aboutToPopup: Event;
+    public var closeRequested: Event;
+    public var dpiChanged: Event;
+    public var filesDropped: Event;
+    public var focusEntered: Event;
+    public var focusExited: Event;
+    public var goBackRequested: Event;
+    public var mouseEntered: Event;
+    public var mouseExited: Event;
+    public var themeChanged: Event;
+    public var titleChanged: Event;
+    public var titlebarChanged: Event;
+    public var visibilityChanged: Event;
+    public var windowInput: Event;
 }

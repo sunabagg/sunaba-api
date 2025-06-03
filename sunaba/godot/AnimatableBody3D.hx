@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.AnimatableBody3D")
 extern class AnimatableBody3D extends StaticBody3D {

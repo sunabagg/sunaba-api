@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.NavigationServer3D")
 extern class NavigationServer3D extends Object {
@@ -156,7 +156,7 @@ extern class NavigationServer3D extends Object {
     public function simplifyPath(path: PackedVector3Array, epsilon: Float): PackedVector3Array;
     public function sourceGeometryParserCreate(): RID;
     public function sourceGeometryParserSetCallback(parser: RID, callback: Callable): Void;
-    public var avoidanceDebugChanged: NativeEvent;
-    public var mapChanged: NativeEvent;
-    public var navigationDebugChanged: NativeEvent;
+    public var avoidanceDebugChanged: Event;
+    public var mapChanged: Event;
+    public var navigationDebugChanged: Event;
 }

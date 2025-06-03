@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 import sunaba.core.NativeObject;
 
 @:native("godot.PackedInt64Array")

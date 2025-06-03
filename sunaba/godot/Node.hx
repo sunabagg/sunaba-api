@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.Node")
 extern class Node extends Object {
@@ -110,15 +110,15 @@ extern class Node extends Object {
     public function setThreadSafe(property: StringName, value: Variant): Void;
     public function setTranslationDomainInherited(): Void;
     public function updateConfigurationWarnings(): Void;
-    public var childEnteredTree: NativeEvent;
-    public var childExitingTree: NativeEvent;
-    public var childOrderChanged: NativeEvent;
-    public var editorDescriptionChanged: NativeEvent;
-    public var editorStateChanged: NativeEvent;
-    public var ready: NativeEvent;
-    public var renamed: NativeEvent;
-    public var replacingBy: NativeEvent;
-    public var treeEntered: NativeEvent;
-    public var treeExited: NativeEvent;
-    public var treeExiting: NativeEvent;
+    public var childEnteredTree: Event;
+    public var childExitingTree: Event;
+    public var childOrderChanged: Event;
+    public var editorDescriptionChanged: Event;
+    public var editorStateChanged: Event;
+    public var ready: Event;
+    public var renamed: Event;
+    public var replacingBy: Event;
+    public var treeEntered: Event;
+    public var treeExited: Event;
+    public var treeExiting: Event;
 }

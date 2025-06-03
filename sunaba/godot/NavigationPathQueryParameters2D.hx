@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.NavigationPathQueryParameters2D")
 extern class NavigationPathQueryParameters2D extends RefCounted {

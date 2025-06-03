@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.TouchScreenButton")
 extern class TouchScreenButton extends Node2D {
@@ -16,6 +16,6 @@ extern class TouchScreenButton extends Node2D {
     @:native("__new")
     public function new();
     public function isPressed(): Bool;
-    public var pressed: NativeEvent;
-    public var released: NativeEvent;
+    public var pressed: Event;
+    public var released: Event;
 }

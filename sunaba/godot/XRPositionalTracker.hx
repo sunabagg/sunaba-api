@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class XRPositionalTrackerType {
     public static var Head: Int = 1;
@@ -27,11 +27,11 @@ extern class XRPositionalTracker extends XRTracker {
     public function invalidatePose(name: StringName): Void;
     public function setInput(name: StringName, value: Variant): Void;
     public function setPose(name: StringName, transform: Transform3D, linearVelocity: GdVector3, angularVelocity: GdVector3, trackingConfidence: Int): Void;
-    public var buttonPressed: NativeEvent;
-    public var buttonReleased: NativeEvent;
-    public var inputFloatChanged: NativeEvent;
-    public var inputVector2Changed: NativeEvent;
-    public var poseChanged: NativeEvent;
-    public var poseLostTracking: NativeEvent;
-    public var profileChanged: NativeEvent;
+    public var buttonPressed: Event;
+    public var buttonReleased: Event;
+    public var inputFloatChanged: Event;
+    public var inputVector2Changed: Event;
+    public var poseChanged: Event;
+    public var poseLostTracking: Event;
+    public var profileChanged: Event;
 }

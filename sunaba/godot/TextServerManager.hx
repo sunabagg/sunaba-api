@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.TextServerManager")
 extern class TextServerManager extends Object {
@@ -14,6 +14,6 @@ extern class TextServerManager extends Object {
     public function getPrimaryInterface(): TextServer;
     public function removeInterface(interface: TextServer): Void;
     public function setPrimaryInterface(index: TextServer): Void;
-    public var interfaceAdded: NativeEvent;
-    public var interfaceRemoved: NativeEvent;
+    public var interfaceAdded: Event;
+    public var interfaceRemoved: Event;
 }

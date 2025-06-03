@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.GrooveJoint2D")
 extern class GrooveJoint2D extends Joint2D {

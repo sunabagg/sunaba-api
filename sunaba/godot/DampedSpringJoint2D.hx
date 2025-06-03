@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.DampedSpringJoint2D")
 extern class DampedSpringJoint2D extends Joint2D {

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class AudioStreamPlayerProcessMode {
     public static var Inherit: Int = 0;
@@ -55,5 +55,5 @@ extern class AudioStreamPlayer extends Node {
     public function play(fromPosition: Float = 0.0): Void;
     public function seek(toPosition: Float): Void;
     public function stop(): Void;
-    public var finished: NativeEvent;
+    public var finished: Event;
 }

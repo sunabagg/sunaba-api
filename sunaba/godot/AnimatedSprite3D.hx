@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class AnimatedSprite3DAxis {
     public static var X: Int = 0;
@@ -55,9 +55,9 @@ extern class AnimatedSprite3D extends SpriteBase3D {
     public function playBackwards(?name: StringName): Void;
     public function setFrameAndProgress(frame: Int, progress: Float): Void;
     public function stop(): Void;
-    public var animationChanged: NativeEvent;
-    public var animationFinished: NativeEvent;
-    public var animationLooped: NativeEvent;
-    public var frameChanged: NativeEvent;
-    public var spriteFramesChanged: NativeEvent;
+    public var animationChanged: Event;
+    public var animationFinished: Event;
+    public var animationLooped: Event;
+    public var frameChanged: Event;
+    public var spriteFramesChanged: Event;
 }

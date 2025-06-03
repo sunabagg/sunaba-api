@@ -2,14 +2,14 @@ package sunaba.godot.extensions;
 
 import sunaba.godot.TabContainer;
 import sunaba.godot.Texture2D;
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("gdx.TabManager")
 extern class TabManager extends TabContainer {
     public var tabBar : TabBar;
     public var tabsWithNoCloseButton : lua.Table<Int, String>;
     public var autoCloseTabs : Bool;
-    public var tabCloseRequested : NativeEvent;
+    public var tabCloseRequested : Event;
     public var showCloseButton : Bool;
     @:native("__new")
     public function new();

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.GPUParticles3D")
 extern class GPUParticles3D extends GeometryInstance3D {
@@ -43,5 +43,5 @@ extern class GPUParticles3D extends GeometryInstance3D {
     public function requestParticlesProcess(processTime: Float): Void;
     public function restart(keepSeed: Bool = false): Void;
     public function setDrawPassMesh(pass: Int, mesh: Mesh): Void;
-    public var finished: NativeEvent;
+    public var finished: Event;
 }

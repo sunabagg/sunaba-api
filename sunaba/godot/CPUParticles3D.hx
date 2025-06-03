@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.CPUParticles3D")
 extern class CPUParticles3D extends GeometryInstance3D {
@@ -95,5 +95,5 @@ extern class CPUParticles3D extends GeometryInstance3D {
     public function setParamMax(param: Int, value: Float): Void;
     public function setParamMin(param: Int, value: Float): Void;
     public function setParticleFlag(particleFlag: Int, enable: Bool): Void;
-    public var finished: NativeEvent;
+    public var finished: Event;
 }

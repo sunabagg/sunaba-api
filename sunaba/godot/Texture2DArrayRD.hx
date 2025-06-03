@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.Texture2DArrayRD")
 extern class Texture2DArrayRD extends TextureLayeredRD {

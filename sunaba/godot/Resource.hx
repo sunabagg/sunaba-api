@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.Resource")
 extern class Resource extends RefCounted {
@@ -22,6 +22,6 @@ extern class Resource extends RefCounted {
     public function setPathCache(path: String): Void;
     public function setupLocalToScene(): Void;
     public function takeOverPath(path: String): Void;
-    public var changed: NativeEvent;
-    public var setupLocalToSceneRequested: NativeEvent;
+    public var changed: Event;
+    public var setupLocalToSceneRequested: Event;
 }

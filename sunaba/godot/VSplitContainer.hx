@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class VSplitContainerDraggerVisibility {
     public static var Visible: Int = 0;

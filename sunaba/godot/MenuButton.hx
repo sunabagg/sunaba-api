@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class MenuButtonAlignment {
     public static var Left: Int = 0;
@@ -54,5 +54,5 @@ extern class MenuButton extends Button {
     public function getPopup(): PopupMenu;
     public function setDisableShortcuts(disabled: Bool): Void;
     public function showPopup(): Void;
-    public var aboutToPopup: NativeEvent;
+    public var aboutToPopup: Event;
 }

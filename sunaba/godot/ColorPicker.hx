@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.ColorPicker")
 extern class ColorPicker extends VBoxContainer {
@@ -23,7 +23,7 @@ extern class ColorPicker extends VBoxContainer {
     public function eraseRecentPreset(color: Color): Void;
     public function getPresets(): PackedColorArray;
     public function getRecentPresets(): PackedColorArray;
-    public var colorChanged: NativeEvent;
-    public var presetAdded: NativeEvent;
-    public var presetRemoved: NativeEvent;
+    public var colorChanged: Event;
+    public var presetAdded: Event;
+    public var presetRemoved: Event;
 }

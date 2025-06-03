@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.ScrollContainer")
 extern class ScrollContainer extends Container {
@@ -18,6 +18,6 @@ extern class ScrollContainer extends Container {
     public function ensureControlVisible(control: Control): Void;
     public function getHScrollBar(): HScrollBar;
     public function getVScrollBar(): VScrollBar;
-    public var scrollEnded: NativeEvent;
-    public var scrollStarted: NativeEvent;
+    public var scrollEnded: Event;
+    public var scrollStarted: Event;
 }

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class ControlClipChildren {
     public static var Disabled: Int = 0;
@@ -149,13 +149,13 @@ extern class Control extends CanvasItem {
     public function setSize(size: GdVector2, keepOffsets: Bool = false): Void;
     public function updateMinimumSize(): Void;
     public function warpMouse(position: GdVector2): Void;
-    public var focusEntered: NativeEvent;
-    public var focusExited: NativeEvent;
-    public var guiInput: NativeEvent;
-    public var minimumSizeChanged: NativeEvent;
-    public var mouseEntered: NativeEvent;
-    public var mouseExited: NativeEvent;
-    public var resized: NativeEvent;
-    public var sizeFlagsChanged: NativeEvent;
-    public var themeChanged: NativeEvent;
+    public var focusEntered: Event;
+    public var focusExited: Event;
+    public var guiInput: Event;
+    public var minimumSizeChanged: Event;
+    public var mouseEntered: Event;
+    public var mouseExited: Event;
+    public var resized: Event;
+    public var sizeFlagsChanged: Event;
+    public var themeChanged: Event;
 }

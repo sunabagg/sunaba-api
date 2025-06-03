@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class VideoStreamPlayerLayoutDirection {
     public static var Inherited: Int = 0;
@@ -100,5 +100,5 @@ extern class VideoStreamPlayer extends Control {
     public function isPlaying(): Bool;
     public function play(): Void;
     public function stop(): Void;
-    public var finished: NativeEvent;
+    public var finished: Event;
 }

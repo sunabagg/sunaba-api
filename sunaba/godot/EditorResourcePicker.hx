@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.EditorResourcePicker")
 extern class EditorResourcePicker extends HBoxContainer {
@@ -12,6 +12,6 @@ extern class EditorResourcePicker extends HBoxContainer {
     public function new();
     public function getAllowedTypes(): PackedStringArray;
     public function setTogglePressed(pressed: Bool): Void;
-    public var resourceChanged: NativeEvent;
-    public var resourceSelected: NativeEvent;
+    public var resourceChanged: Event;
+    public var resourceSelected: Event;
 }

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.AnimationNodeStateMachineTransition")
 extern class AnimationNodeStateMachineTransition extends Resource {
@@ -15,5 +15,5 @@ extern class AnimationNodeStateMachineTransition extends Resource {
     public var xfadeTime: Float;
     @:native("__new")
     public function new();
-    public var advanceConditionChanged: NativeEvent;
+    public var advanceConditionChanged: Event;
 }

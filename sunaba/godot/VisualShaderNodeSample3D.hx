@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.VisualShaderNodeSample3D")
 extern class VisualShaderNodeSample3D extends VisualShaderNode {

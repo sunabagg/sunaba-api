@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.LightmapperRD")
 extern class LightmapperRD extends Lightmapper {

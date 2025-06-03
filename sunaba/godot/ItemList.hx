@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class ItemListLayoutDirection {
     public static var Inherited: Int = 0;
@@ -147,9 +147,9 @@ extern class ItemList extends Control {
     public function setItemTooltip(idx: Int, tooltip: String): Void;
     public function setItemTooltipEnabled(idx: Int, enable: Bool): Void;
     public function sortItemsByText(): Void;
-    public var emptyClicked: NativeEvent;
-    public var itemActivated: NativeEvent;
-    public var itemClicked: NativeEvent;
-    public var itemSelected: NativeEvent;
-    public var multiSelected: NativeEvent;
+    public var emptyClicked: Event;
+    public var itemActivated: Event;
+    public var itemClicked: Event;
+    public var itemSelected: Event;
+    public var multiSelected: Event;
 }

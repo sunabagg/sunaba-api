@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.UndoRedo")
 extern class UndoRedo extends Object {
@@ -28,5 +28,5 @@ extern class UndoRedo extends Object {
     public function redo(): Bool;
     public function startForceKeepInMergeEnds(): Void;
     public function undo(): Bool;
-    public var versionChanged: NativeEvent;
+    public var versionChanged: Event;
 }

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("godot.HTTPRequest")
 extern class HTTPRequest extends Node {
@@ -22,5 +22,5 @@ extern class HTTPRequest extends Node {
     public function setHttpProxy(host: String, port: Int): Void;
     public function setHttpsProxy(host: String, port: Int): Void;
     public function setTlsOptions(clientOptions: TLSOptions): Void;
-    public var requestCompleted: NativeEvent;
+    public var requestCompleted: Event;
 }

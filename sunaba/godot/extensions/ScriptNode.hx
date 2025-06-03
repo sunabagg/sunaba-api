@@ -3,7 +3,7 @@ package sunaba.godot.extensions;
 import haxe.Constraints.Function;
 import sunaba.godot.Node;
 import sunaba.ScriptBehavior;
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 @:native("gdx.ScriptNode")
 extern class ScriptNode extends Node {
@@ -14,25 +14,25 @@ extern class ScriptNode extends Node {
     public var instance: ScriptBehavior;
 
     @:native("EnterTree")
-    public var onEnterTree: NativeEvent;
+    public var onEnterTree: Event;
     @:native("Ready")
-    public var onReady: NativeEvent;
+    public var onReady: Event;
     @:native("Process")
-    public var onProcess: NativeEvent;
+    public var onProcess: Event;
     @:native("PhysicsProcess")
-    public var onPhysicsProcess: NativeEvent;
+    public var onPhysicsProcess: Event;
     @:native("Input")
-    public var onInput: NativeEvent;
+    public var onInput: Event;
     @:native("UnhandledInput")
-    public var onUnhandledInput: NativeEvent;
+    public var onUnhandledInput: Event;
     @:native("ShortcutInput")
-    public var onShortcutInput: NativeEvent;
+    public var onShortcutInput: Event;
     @:native("UnhandledKeyInput")
-    public var onUnhandledKeyInput: NativeEvent;
+    public var onUnhandledKeyInput: Event;
     @:native("ExitTree")
-    public var onExitTree: NativeEvent;
+    public var onExitTree: Event;
     @:native("Notification")
-    public var onNotification: NativeEvent;
+    public var onNotification: Event;
     
     @:native("ProcessFunction")
     public var processFunction: Function;

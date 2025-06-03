@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.NativeEvent;
+import sunaba.core.Event;
 
 class SkeletonModifier3DRotationEditMode {
     public static var Euler: Int = 0;
@@ -24,5 +24,5 @@ extern class SkeletonModifier3D extends Node3D {
     @:native("__new")
     public function new();
     public function getSkeleton(): Skeleton3D;
-    public var modificationProcessed: NativeEvent;
+    public var modificationProcessed: Event;
 }
