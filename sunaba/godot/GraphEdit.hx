@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class GraphEditLayoutDirection {
     public static var Inherited: Int = 0;
@@ -131,23 +131,23 @@ extern class GraphEdit extends Control {
     public function removeValidRightDisconnectType(type: Int): Void;
     public function setConnectionActivity(fromNode: StringName, fromPort: Int, toNode: StringName, toPort: Int, amount: Float): Void;
     public function setSelected(node: Node): Void;
-    public var beginNodeMove: Event;
-    public var connectionDragEnded: Event;
-    public var connectionDragStarted: Event;
-    public var connectionFromEmpty: Event;
-    public var connectionRequest: Event;
-    public var connectionToEmpty: Event;
-    public var copyNodesRequest: Event;
-    public var cutNodesRequest: Event;
-    public var deleteNodesRequest: Event;
-    public var disconnectionRequest: Event;
-    public var duplicateNodesRequest: Event;
-    public var endNodeMove: Event;
-    public var frameRectChanged: Event;
-    public var graphElementsLinkedToFrameRequest: Event;
-    public var nodeDeselected: Event;
-    public var nodeSelected: Event;
-    public var pasteNodesRequest: Event;
-    public var popupRequest: Event;
-    public var scrollOffsetChanged: Event;
+    public var beginNodeMove: NativeEvent;
+    public var connectionDragEnded: NativeEvent;
+    public var connectionDragStarted: NativeEvent;
+    public var connectionFromEmpty: NativeEvent;
+    public var connectionRequest: NativeEvent;
+    public var connectionToEmpty: NativeEvent;
+    public var copyNodesRequest: NativeEvent;
+    public var cutNodesRequest: NativeEvent;
+    public var deleteNodesRequest: NativeEvent;
+    public var disconnectionRequest: NativeEvent;
+    public var duplicateNodesRequest: NativeEvent;
+    public var endNodeMove: NativeEvent;
+    public var frameRectChanged: NativeEvent;
+    public var graphElementsLinkedToFrameRequest: NativeEvent;
+    public var nodeDeselected: NativeEvent;
+    public var nodeSelected: NativeEvent;
+    public var pasteNodesRequest: NativeEvent;
+    public var popupRequest: NativeEvent;
+    public var scrollOffsetChanged: NativeEvent;
 }

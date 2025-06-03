@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.OccluderPolygon2D")
 extern class OccluderPolygon2D extends Resource {

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.AudioEffectEQ6")
 extern class AudioEffectEQ6 extends AudioEffectEQ {

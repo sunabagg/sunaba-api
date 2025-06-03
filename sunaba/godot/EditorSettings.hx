@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.EditorSettings")
 extern class EditorSettings extends Resource {
@@ -426,5 +426,5 @@ extern class EditorSettings extends Resource {
     public function setProjectMetadata(section: String, key: String, data: Variant): Void;
     public function setRecentDirs(dirs: PackedStringArray): Void;
     public function setSetting(name: String, value: Variant): Void;
-    public var settingsChanged: Event;
+    public var settingsChanged: NativeEvent;
 }

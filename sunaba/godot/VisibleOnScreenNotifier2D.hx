@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.VisibleOnScreenNotifier2D")
 extern class VisibleOnScreenNotifier2D extends Node2D {
@@ -8,6 +8,6 @@ extern class VisibleOnScreenNotifier2D extends Node2D {
     @:native("__new")
     public function new();
     public function isOnScreen(): Bool;
-    public var screenEntered: Event;
-    public var screenExited: Event;
+    public var screenEntered: NativeEvent;
+    public var screenExited: NativeEvent;
 }

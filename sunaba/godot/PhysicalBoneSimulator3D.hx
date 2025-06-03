@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.PhysicalBoneSimulator3D")
 extern class PhysicalBoneSimulator3D extends SkeletonModifier3D {

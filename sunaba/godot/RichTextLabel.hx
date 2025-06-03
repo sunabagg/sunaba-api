@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class RichTextLabelLayoutDirection {
     public static var Inherited: Int = 0;
@@ -183,8 +183,8 @@ extern class RichTextLabel extends Control {
     public function setCellSizeOverride(minSize: GdVector2, maxSize: GdVector2): Void;
     public function setTableColumnExpand(column: Int, expand: Bool, ratio: Int = 1, shrink: Bool = true): Void;
     public function updateImage(key: Variant, mask: Int, image: Texture2D, width: Int = 0, height: Int = 0, ?color: Color, inlineAlign: Int = 5, ?region: Rect2, pad: Bool = false, ?tooltip: String, sizeInPercent: Bool = false): Void;
-    public var finished: Event;
-    public var metaClicked: Event;
-    public var metaHoverEnded: Event;
-    public var metaHoverStarted: Event;
+    public var finished: NativeEvent;
+    public var metaClicked: NativeEvent;
+    public var metaHoverEnded: NativeEvent;
+    public var metaHoverStarted: NativeEvent;
 }

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class AnimationMixerProcessMode {
     public static var Inherit: Int = 0;
@@ -68,11 +68,11 @@ extern class AnimationMixer extends Node {
     public function hasAnimationLibrary(name: StringName): Bool;
     public function removeAnimationLibrary(name: StringName): Void;
     public function renameAnimationLibrary(name: StringName, newname: StringName): Void;
-    public var animationFinished: Event;
-    public var animationLibrariesUpdated: Event;
-    public var animationListChanged: Event;
-    public var animationStarted: Event;
-    public var cachesCleared: Event;
-    public var mixerApplied: Event;
-    public var mixerUpdated: Event;
+    public var animationFinished: NativeEvent;
+    public var animationLibrariesUpdated: NativeEvent;
+    public var animationListChanged: NativeEvent;
+    public var animationStarted: NativeEvent;
+    public var cachesCleared: NativeEvent;
+    public var mixerApplied: NativeEvent;
+    public var mixerUpdated: NativeEvent;
 }

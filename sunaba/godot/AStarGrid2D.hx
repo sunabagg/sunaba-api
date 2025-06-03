@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.AStarGrid2D")
 extern class AStarGrid2D extends RefCounted {

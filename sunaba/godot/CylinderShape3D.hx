@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.CylinderShape3D")
 extern class CylinderShape3D extends Shape3D {

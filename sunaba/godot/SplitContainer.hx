@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.SplitContainer")
 extern class SplitContainer extends Container {
@@ -17,7 +17,7 @@ extern class SplitContainer extends Container {
     public function new();
     public function clampSplitOffset(): Void;
     public function getDragAreaControl(): Control;
-    public var dragEnded: Event;
-    public var dragStarted: Event;
-    public var dragged: Event;
+    public var dragEnded: NativeEvent;
+    public var dragStarted: NativeEvent;
+    public var dragged: NativeEvent;
 }

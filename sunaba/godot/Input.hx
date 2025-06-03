@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.Input")
 extern class Input extends Object {
@@ -56,5 +56,5 @@ extern class Input extends Object {
     public static function stopJoyVibration(device: Int): Void;
     public static function vibrateHandheld(durationMs: Int = 500, amplitude: Float = -1.0): Void;
     public static function warpMouse(position: GdVector2): Void;
-    public var joyConnectionChanged: Event;
+    public var joyConnectionChanged: NativeEvent;
 }

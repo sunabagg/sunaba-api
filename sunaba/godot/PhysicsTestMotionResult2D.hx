@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.PhysicsTestMotionResult2D")
 extern class PhysicsTestMotionResult2D extends RefCounted {

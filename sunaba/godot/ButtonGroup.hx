@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.ButtonGroup")
 extern class ButtonGroup extends Resource {
@@ -9,5 +9,5 @@ extern class ButtonGroup extends Resource {
     public function new();
     public function getButtons(): Dynamic;
     public function getPressedButton(): BaseButton;
-    public var pressed: Event;
+    public var pressed: NativeEvent;
 }

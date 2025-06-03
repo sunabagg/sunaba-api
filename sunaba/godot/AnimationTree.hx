@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class AnimationTreeCallbackModeProcess {
     public static var Physics: Int = 0;
@@ -28,5 +28,5 @@ extern class AnimationTree extends AnimationMixer {
     public function new();
     public function getProcessCallback(): Int;
     public function setProcessCallback(mode: Int): Void;
-    public var animationPlayerChanged: Event;
+    public var animationPlayerChanged: NativeEvent;
 }

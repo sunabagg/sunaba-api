@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class XRFaceModifier3DRotationEditMode {
     public static var Euler: Int = 0;

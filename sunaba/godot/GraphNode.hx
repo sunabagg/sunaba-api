@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.GraphNode")
 extern class GraphNode extends GraphElement {
@@ -40,5 +40,5 @@ extern class GraphNode extends GraphElement {
     public function setSlotEnabledRight(slotIndex: Int, enable: Bool): Void;
     public function setSlotTypeLeft(slotIndex: Int, type: Int): Void;
     public function setSlotTypeRight(slotIndex: Int, type: Int): Void;
-    public var slotUpdated: Event;
+    public var slotUpdated: NativeEvent;
 }

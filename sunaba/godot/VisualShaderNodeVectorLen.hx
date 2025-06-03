@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class VisualShaderNodeVectorLenOpType {
     public static var Vector2D: Int = 0;

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class NinePatchRectLayoutDirection {
     public static var Inherited: Int = 0;
@@ -94,5 +94,5 @@ extern class NinePatchRect extends Control {
     public function new();
     public function getPatchMargin(margin: Int): Int;
     public function setPatchMargin(margin: Int, value: Int): Void;
-    public var textureChanged: Event;
+    public var textureChanged: NativeEvent;
 }

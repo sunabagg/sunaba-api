@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.Sprite2D")
 extern class Sprite2D extends Node2D {
@@ -20,6 +20,6 @@ extern class Sprite2D extends Node2D {
     public function new();
     public function getRect(): Rect2;
     public function isPixelOpaque(pos: GdVector2): Bool;
-    public var frameChanged: Event;
-    public var textureChanged: Event;
+    public var frameChanged: NativeEvent;
+    public var textureChanged: NativeEvent;
 }

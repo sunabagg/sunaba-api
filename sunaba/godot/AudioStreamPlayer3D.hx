@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class AudioStreamPlayer3DRotationEditMode {
     public static var Euler: Int = 0;
@@ -49,5 +49,5 @@ extern class AudioStreamPlayer3D extends Node3D {
     public function play(fromPosition: Float = 0.0): Void;
     public function seek(toPosition: Float): Void;
     public function stop(): Void;
-    public var finished: Event;
+    public var finished: NativeEvent;
 }

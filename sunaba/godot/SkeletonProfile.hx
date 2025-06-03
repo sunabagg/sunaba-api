@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.SkeletonProfile")
 extern class SkeletonProfile extends Resource {
@@ -31,5 +31,5 @@ extern class SkeletonProfile extends Resource {
     public function setRequired(boneIdx: Int, required: Bool): Void;
     public function setTailDirection(boneIdx: Int, tailDirection: Int): Void;
     public function setTexture(groupIdx: Int, texture: Texture2D): Void;
-    public var profileUpdated: Event;
+    public var profileUpdated: NativeEvent;
 }

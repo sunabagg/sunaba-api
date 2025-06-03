@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.EditorFileDialog")
 extern class EditorFileDialog extends ConfirmationDialog {
@@ -34,8 +34,8 @@ extern class EditorFileDialog extends ConfirmationDialog {
     public function setOptionDefault(option: Int, defaultValueIndex: Int): Void;
     public function setOptionName(option: Int, name: String): Void;
     public function setOptionValues(option: Int, values: PackedStringArray): Void;
-    public var dirSelected: Event;
-    public var fileSelected: Event;
-    public var filenameFilterChanged: Event;
-    public var filesSelected: Event;
+    public var dirSelected: NativeEvent;
+    public var fileSelected: NativeEvent;
+    public var filenameFilterChanged: NativeEvent;
+    public var filesSelected: NativeEvent;
 }

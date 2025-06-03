@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.BoxOccluder3D")
 extern class BoxOccluder3D extends Occluder3D {

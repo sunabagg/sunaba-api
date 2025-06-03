@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class Area2DDisableMode {
     public static var Remove: Int = 0;
@@ -33,12 +33,12 @@ extern class Area2D extends CollisionObject2D {
     public function hasOverlappingBodies(): Bool;
     public function overlapsArea(area: Node): Bool;
     public function overlapsBody(body: Node): Bool;
-    public var areaEntered: Event;
-    public var areaExited: Event;
-    public var areaShapeEntered: Event;
-    public var areaShapeExited: Event;
-    public var bodyEntered: Event;
-    public var bodyExited: Event;
-    public var bodyShapeEntered: Event;
-    public var bodyShapeExited: Event;
+    public var areaEntered: NativeEvent;
+    public var areaExited: NativeEvent;
+    public var areaShapeEntered: NativeEvent;
+    public var areaShapeExited: NativeEvent;
+    public var bodyEntered: NativeEvent;
+    public var bodyExited: NativeEvent;
+    public var bodyShapeEntered: NativeEvent;
+    public var bodyShapeExited: NativeEvent;
 }

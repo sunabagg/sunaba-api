@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class ResourcePreloaderProcessMode {
     public static var Inherit: Int = 0;

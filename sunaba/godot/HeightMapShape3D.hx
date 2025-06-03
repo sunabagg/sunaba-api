@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.HeightMapShape3D")
 extern class HeightMapShape3D extends Shape3D {

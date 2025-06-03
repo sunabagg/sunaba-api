@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class PopupMode {
     public static var Windowed: Int = 0;
@@ -42,5 +42,5 @@ class PopupContentScaleStretch {
 extern class Popup extends Window {
     @:native("__new")
     public function new();
-    public var popupHide: Event;
+    public var popupHide: NativeEvent;
 }

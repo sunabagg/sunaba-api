@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class PhysicsBody3DDisableMode {
     public static var Remove: Int = 0;

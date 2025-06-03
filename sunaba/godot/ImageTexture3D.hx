@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.ImageTexture3D")
 extern class ImageTexture3D extends Texture3D {

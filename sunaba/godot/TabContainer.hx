@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.TabContainer")
 extern class TabContainer extends Container {
@@ -44,11 +44,11 @@ extern class TabContainer extends Container {
     public function setTabMetadata(tabIdx: Int, metadata: Variant): Void;
     public function setTabTitle(tabIdx: Int, title: String): Void;
     public function setTabTooltip(tabIdx: Int, tooltip: String): Void;
-    public var activeTabRearranged: Event;
-    public var prePopupPressed: Event;
-    public var tabButtonPressed: Event;
-    public var tabChanged: Event;
-    public var tabClicked: Event;
-    public var tabHovered: Event;
-    public var tabSelected: Event;
+    public var activeTabRearranged: NativeEvent;
+    public var prePopupPressed: NativeEvent;
+    public var tabButtonPressed: NativeEvent;
+    public var tabChanged: NativeEvent;
+    public var tabClicked: NativeEvent;
+    public var tabHovered: NativeEvent;
+    public var tabSelected: NativeEvent;
 }

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class StatusIndicatorProcessMode {
     public static var Inherit: Int = 0;
@@ -43,5 +43,5 @@ extern class StatusIndicator extends Node {
     @:native("__new")
     public function new();
     public function getRect(): Rect2;
-    public var pressed: Event;
+    public var pressed: NativeEvent;
 }

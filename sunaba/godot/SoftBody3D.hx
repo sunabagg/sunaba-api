@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.SoftBody3D")
 extern class SoftBody3D extends MeshInstance3D {

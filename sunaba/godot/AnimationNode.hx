@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.AnimationNode")
 extern class AnimationNode extends Resource {
@@ -22,7 +22,7 @@ extern class AnimationNode extends Resource {
     public function setFilterPath(path: NodePath, enable: Bool): Void;
     public function setInputName(input: Int, name: String): Bool;
     public function setParameter(name: StringName, value: Variant): Void;
-    public var animationNodeRemoved: Event;
-    public var animationNodeRenamed: Event;
-    public var treeChanged: Event;
+    public var animationNodeRemoved: NativeEvent;
+    public var animationNodeRenamed: NativeEvent;
+    public var treeChanged: NativeEvent;
 }

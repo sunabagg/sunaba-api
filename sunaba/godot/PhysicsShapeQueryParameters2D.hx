@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.PhysicsShapeQueryParameters2D")
 extern class PhysicsShapeQueryParameters2D extends RefCounted {

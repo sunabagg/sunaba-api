@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.AudioStream")
 extern class AudioStream extends Resource {
@@ -12,5 +12,5 @@ extern class AudioStream extends Resource {
     public function instantiatePlayback(): AudioStreamPlayback;
     public function isMetaStream(): Bool;
     public function isMonophonic(): Bool;
-    public var parameterListChanged: Event;
+    public var parameterListChanged: NativeEvent;
 }

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.GPUParticles2D")
 extern class GPUParticles2D extends Node2D {
@@ -37,5 +37,5 @@ extern class GPUParticles2D extends Node2D {
     public function emitParticle(xform: Transform2D, velocity: GdVector2, color: Color, custom: Color, flags: Int): Void;
     public function requestParticlesProcess(processTime: Float): Void;
     public function restart(keepSeed: Bool = false): Void;
-    public var finished: Event;
+    public var finished: NativeEvent;
 }

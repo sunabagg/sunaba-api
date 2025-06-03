@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class LabelLayoutDirection {
     public static var Inherited: Int = 0;

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.GradientTexture2D")
 extern class GradientTexture2D extends Texture2D {

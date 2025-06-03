@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class DirectionalLight2DBlendMode {
     public static var Add: Int = 0;

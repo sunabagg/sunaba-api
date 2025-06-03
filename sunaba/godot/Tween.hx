@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.Tween")
 extern class Tween extends RefCounted {
@@ -32,7 +32,7 @@ extern class Tween extends RefCounted {
     public function tweenMethod(method: Callable, from: Variant, to: Variant, duration: Float): MethodTweener;
     public function tweenProperty(object: Object, property: NodePath, finalVal: Variant, duration: Float): PropertyTweener;
     public function tweenSubtween(subtween: Tween): SubtweenTweener;
-    public var finished: Event;
-    public var loopFinished: Event;
-    public var stepFinished: Event;
+    public var finished: NativeEvent;
+    public var loopFinished: NativeEvent;
+    public var stepFinished: NativeEvent;
 }

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.XRAnchor3D")
 extern class XRAnchor3D extends XRNode3D {

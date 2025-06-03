@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class CodeEditWrapMode {
     public static var None: Int = 0;
@@ -130,9 +130,9 @@ extern class CodeEdit extends TextEdit {
     public function unfoldLine(line: Int): Void;
     public function unindentLines(): Void;
     public function updateCodeCompletionOptions(force: Bool): Void;
-    public var breakpointToggled: Event;
-    public var codeCompletionRequested: Event;
-    public var symbolHovered: Event;
-    public var symbolLookup: Event;
-    public var symbolValidate: Event;
+    public var breakpointToggled: NativeEvent;
+    public var codeCompletionRequested: NativeEvent;
+    public var symbolHovered: NativeEvent;
+    public var symbolLookup: NativeEvent;
+    public var symbolValidate: NativeEvent;
 }

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.SceneTree")
 extern class SceneTree extends MainLoop {
@@ -40,12 +40,12 @@ extern class SceneTree extends MainLoop {
     public function setGroupFlags(callFlags: Int, group: StringName, property: String, value: Variant): Void;
     public function setMultiplayer(multiplayer: MultiplayerAPI, ?rootPath: NodePath): Void;
     public function unloadCurrentScene(): Void;
-    public var nodeAdded: Event;
-    public var nodeConfigurationWarningChanged: Event;
-    public var nodeRemoved: Event;
-    public var nodeRenamed: Event;
-    public var physicsFrame: Event;
-    public var processFrame: Event;
-    public var treeChanged: Event;
-    public var treeProcessModeChanged: Event;
+    public var nodeAdded: NativeEvent;
+    public var nodeConfigurationWarningChanged: NativeEvent;
+    public var nodeRemoved: NativeEvent;
+    public var nodeRenamed: NativeEvent;
+    public var physicsFrame: NativeEvent;
+    public var processFrame: NativeEvent;
+    public var treeChanged: NativeEvent;
+    public var treeProcessModeChanged: NativeEvent;
 }

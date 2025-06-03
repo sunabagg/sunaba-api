@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class TabBarLayoutDirection {
     public static var Inherited: Int = 0;
@@ -127,12 +127,12 @@ extern class TabBar extends Control {
     public function setTabTextDirection(tabIdx: Int, direction: Int): Void;
     public function setTabTitle(tabIdx: Int, title: String): Void;
     public function setTabTooltip(tabIdx: Int, tooltip: String): Void;
-    public var activeTabRearranged: Event;
-    public var tabButtonPressed: Event;
-    public var tabChanged: Event;
-    public var tabClicked: Event;
-    public var tabClosePressed: Event;
-    public var tabHovered: Event;
-    public var tabRmbClicked: Event;
-    public var tabSelected: Event;
+    public var activeTabRearranged: NativeEvent;
+    public var tabButtonPressed: NativeEvent;
+    public var tabChanged: NativeEvent;
+    public var tabClicked: NativeEvent;
+    public var tabClosePressed: NativeEvent;
+    public var tabHovered: NativeEvent;
+    public var tabRmbClicked: NativeEvent;
+    public var tabSelected: NativeEvent;
 }

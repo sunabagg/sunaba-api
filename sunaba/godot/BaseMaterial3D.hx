@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.BaseMaterial3D")
 extern class BaseMaterial3D extends Material {

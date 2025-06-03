@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class Path3DRotationEditMode {
     public static var Euler: Int = 0;
@@ -22,5 +22,5 @@ extern class Path3D extends Node3D {
     public var curve: Curve3D;
     @:native("__new")
     public function new();
-    public var curveChanged: Event;
+    public var curveChanged: NativeEvent;
 }

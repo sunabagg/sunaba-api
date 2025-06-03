@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class AnimationPlayerCallbackModeProcess {
     public static var Physics: Int = 0;
@@ -66,6 +66,6 @@ extern class AnimationPlayer extends AnimationMixer {
     public function setSection(startTime: Float = -1, endTime: Float = -1): Void;
     public function setSectionWithMarkers(?startMarker: StringName, ?endMarker: StringName): Void;
     public function stop(keepState: Bool = false): Void;
-    public var animationChanged: Event;
-    public var currentAnimationChanged: Event;
+    public var animationChanged: NativeEvent;
+    public var currentAnimationChanged: NativeEvent;
 }

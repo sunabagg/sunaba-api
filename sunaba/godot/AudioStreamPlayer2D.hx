@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.AudioStreamPlayer2D")
 extern class AudioStreamPlayer2D extends Node2D {
@@ -26,5 +26,5 @@ extern class AudioStreamPlayer2D extends Node2D {
     public function play(fromPosition: Float = 0.0): Void;
     public function seek(toPosition: Float): Void;
     public function stop(): Void;
-    public var finished: Event;
+    public var finished: NativeEvent;
 }

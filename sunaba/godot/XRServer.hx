@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.XRServer")
 extern class XRServer extends Object {
@@ -24,10 +24,10 @@ extern class XRServer extends Object {
     public static function getTrackers(trackerTypes: Int): Map<Dynamic, Dynamic>;
     public static function removeInterface(interface: XRInterface): Void;
     public static function removeTracker(tracker: XRTracker): Void;
-    public var interfaceAdded: Event;
-    public var interfaceRemoved: Event;
-    public var referenceFrameChanged: Event;
-    public var trackerAdded: Event;
-    public var trackerRemoved: Event;
-    public var trackerUpdated: Event;
+    public var interfaceAdded: NativeEvent;
+    public var interfaceRemoved: NativeEvent;
+    public var referenceFrameChanged: NativeEvent;
+    public var trackerAdded: NativeEvent;
+    public var trackerRemoved: NativeEvent;
+    public var trackerUpdated: NativeEvent;
 }

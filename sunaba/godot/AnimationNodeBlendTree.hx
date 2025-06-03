@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.AnimationNodeBlendTree")
 extern class AnimationNodeBlendTree extends AnimationRootNode {
@@ -16,5 +16,5 @@ extern class AnimationNodeBlendTree extends AnimationRootNode {
     public function removeNode(name: StringName): Void;
     public function renameNode(name: StringName, newName: StringName): Void;
     public function setNodePosition(name: StringName, position: GdVector2): Void;
-    public var nodeChanged: Event;
+    public var nodeChanged: NativeEvent;
 }

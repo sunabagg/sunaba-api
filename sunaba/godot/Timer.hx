@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class TimerProcessMode {
     public static var Inherit: Int = 0;
@@ -48,5 +48,5 @@ extern class Timer extends Node {
     public function isStopped(): Bool;
     public function start(timeSec: Float = -1): Void;
     public function stop(): Void;
-    public var timeout: Event;
+    public var timeout: NativeEvent;
 }

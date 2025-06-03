@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.GDExtensionManager")
 extern class GDExtensionManager extends Object {
@@ -12,7 +12,7 @@ extern class GDExtensionManager extends Object {
     public function loadExtension(path: String): Int;
     public function reloadExtension(path: String): Int;
     public function unloadExtension(path: String): Int;
-    public var extensionLoaded: Event;
-    public var extensionUnloading: Event;
-    public var extensionsReloaded: Event;
+    public var extensionLoaded: NativeEvent;
+    public var extensionUnloading: NativeEvent;
+    public var extensionsReloaded: NativeEvent;
 }

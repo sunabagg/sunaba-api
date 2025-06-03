@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.MultiMeshInstance2D")
 extern class MultiMeshInstance2D extends Node2D {
@@ -8,5 +8,5 @@ extern class MultiMeshInstance2D extends Node2D {
     public var texture: Texture2D;
     @:native("__new")
     public function new();
-    public var textureChanged: Event;
+    public var textureChanged: NativeEvent;
 }

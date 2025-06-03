@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.EditorUndoRedoManager")
 extern class EditorUndoRedoManager extends Object {
@@ -19,6 +19,6 @@ extern class EditorUndoRedoManager extends Object {
     public function getHistoryUndoRedo(id: Int): UndoRedo;
     public function getObjectHistoryId(object: Object): Int;
     public function isCommittingAction(): Bool;
-    public var historyChanged: Event;
-    public var versionChanged: Event;
+    public var historyChanged: NativeEvent;
+    public var versionChanged: NativeEvent;
 }

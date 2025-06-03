@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.PopupMenu")
 extern class PopupMenu extends Popup {
@@ -85,8 +85,8 @@ extern class PopupMenu extends Popup {
     public function setItemTooltip(index: Int, tooltip: String): Void;
     public function toggleItemChecked(index: Int): Void;
     public function toggleItemMultistate(index: Int): Void;
-    public var idFocused: Event;
-    public var idPressed: Event;
-    public var indexPressed: Event;
-    public var menuChanged: Event;
+    public var idFocused: NativeEvent;
+    public var idPressed: NativeEvent;
+    public var indexPressed: NativeEvent;
+    public var menuChanged: NativeEvent;
 }

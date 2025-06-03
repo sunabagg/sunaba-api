@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.VisibleOnScreenEnabler3D")
 extern class VisibleOnScreenEnabler3D extends VisibleOnScreenNotifier3D {

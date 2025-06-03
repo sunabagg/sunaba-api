@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.EditorFileSystem")
 extern class EditorFileSystem extends Node {
@@ -15,10 +15,10 @@ extern class EditorFileSystem extends Node {
     public function scan(): Void;
     public function scanSources(): Void;
     public function updateFile(path: String): Void;
-    public var filesystemChanged: Event;
-    public var resourcesReimported: Event;
-    public var resourcesReimporting: Event;
-    public var resourcesReload: Event;
-    public var scriptClassesUpdated: Event;
-    public var sourcesChanged: Event;
+    public var filesystemChanged: NativeEvent;
+    public var resourcesReimported: NativeEvent;
+    public var resourcesReimporting: NativeEvent;
+    public var resourcesReload: NativeEvent;
+    public var scriptClassesUpdated: NativeEvent;
+    public var sourcesChanged: NativeEvent;
 }

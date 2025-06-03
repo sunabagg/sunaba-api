@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class RangeLayoutDirection {
     public static var Inherited: Int = 0;
@@ -96,6 +96,6 @@ extern class Range extends Control {
     public function setValueNoSignal(value: Float): Void;
     public function share(with: Node): Void;
     public function unshare(): Void;
-    public var changed: Event;
-    public var valueChanged: Event;
+    public var changed: NativeEvent;
+    public var valueChanged: NativeEvent;
 }

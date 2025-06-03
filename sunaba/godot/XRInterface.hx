@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.XRInterface")
 extern class XRInterface extends RefCounted {
@@ -32,5 +32,5 @@ extern class XRInterface extends RefCounted {
     public function supportsPlayAreaMode(mode: Int): Bool;
     public function triggerHapticPulse(actionName: String, trackerName: StringName, frequency: Float, amplitude: Float, durationSec: Float, delaySec: Float): Void;
     public function uninitialize(): Void;
-    public var playAreaChanged: Event;
+    public var playAreaChanged: NativeEvent;
 }

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.StreamPeerGZIP")
 extern class StreamPeerGZIP extends StreamPeer {

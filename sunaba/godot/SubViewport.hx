@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class SubViewportMsaa2D {
     public static var Disabled: Int = 0;

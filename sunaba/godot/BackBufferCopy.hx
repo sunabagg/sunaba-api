@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.BackBufferCopy")
 extern class BackBufferCopy extends Node2D {

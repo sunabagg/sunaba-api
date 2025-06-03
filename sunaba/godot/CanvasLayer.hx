@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class CanvasLayerProcessMode {
     public static var Inherit: Int = 0;
@@ -51,5 +51,5 @@ extern class CanvasLayer extends Node {
     public function getFinalTransform(): Transform2D;
     public function hide(): Void;
     public function show(): Void;
-    public var visibilityChanged: Event;
+    public var visibilityChanged: NativeEvent;
 }

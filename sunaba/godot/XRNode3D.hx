@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class XRNode3DRotationEditMode {
     public static var Euler: Int = 0;
@@ -28,5 +28,5 @@ extern class XRNode3D extends Node3D {
     public function getIsActive(): Bool;
     public function getPose(): XRPose;
     public function triggerHapticPulse(actionName: String, frequency: Float, amplitude: Float, durationSec: Float, delaySec: Float): Void;
-    public var trackingChanged: Event;
+    public var trackingChanged: NativeEvent;
 }

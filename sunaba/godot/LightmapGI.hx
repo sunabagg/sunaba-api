@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.LightmapGI")
 extern class LightmapGI extends VisualInstance3D {

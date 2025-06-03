@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class ViewportProcessMode {
     public static var Inherit: Int = 0;
@@ -120,6 +120,6 @@ extern class Viewport extends Node {
     public function setPositionalShadowAtlasQuadrantSubdiv(quadrant: Int, subdiv: Int): Void;
     public function updateMouseCursorState(): Void;
     public function warpMouse(position: GdVector2): Void;
-    public var guiFocusChanged: Event;
-    public var sizeChanged: Event;
+    public var guiFocusChanged: NativeEvent;
+    public var sizeChanged: NativeEvent;
 }

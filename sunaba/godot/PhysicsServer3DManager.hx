@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.PhysicsServer3DManager")
 extern class PhysicsServer3DManager extends Object {

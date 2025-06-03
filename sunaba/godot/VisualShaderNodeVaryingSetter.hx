@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class VisualShaderNodeVaryingSetterVaryingType {
     public static var Float: Int = 0;

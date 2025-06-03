@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.RigidBody2D")
 extern class RigidBody2D extends PhysicsBody2D {
@@ -41,9 +41,9 @@ extern class RigidBody2D extends PhysicsBody2D {
     public function getCollidingBodies(): Dynamic;
     public function getContactCount(): Int;
     public function setAxisVelocity(axisVelocity: GdVector2): Void;
-    public var bodyEntered: Event;
-    public var bodyExited: Event;
-    public var bodyShapeEntered: Event;
-    public var bodyShapeExited: Event;
-    public var sleepingStateChanged: Event;
+    public var bodyEntered: NativeEvent;
+    public var bodyExited: NativeEvent;
+    public var bodyShapeEntered: NativeEvent;
+    public var bodyShapeExited: NativeEvent;
+    public var sleepingStateChanged: NativeEvent;
 }

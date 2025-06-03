@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.AnimationNodeBlendSpace2D")
 extern class AnimationNodeBlendSpace2D extends AnimationRootNode {
@@ -25,5 +25,5 @@ extern class AnimationNodeBlendSpace2D extends AnimationRootNode {
     public function removeTriangle(triangle: Int): Void;
     public function setBlendPointNode(point: Int, node: AnimationRootNode): Void;
     public function setBlendPointPosition(point: Int, pos: GdVector2): Void;
-    public var trianglesUpdated: Event;
+    public var trianglesUpdated: NativeEvent;
 }

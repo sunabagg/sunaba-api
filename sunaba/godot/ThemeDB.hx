@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.ThemeDB")
 extern class ThemeDB extends Object {
@@ -13,5 +13,5 @@ extern class ThemeDB extends Object {
     public function new();
     public function getDefaultTheme(): Theme;
     public function getProjectTheme(): Theme;
-    public var fallbackChanged: Event;
+    public var fallbackChanged: NativeEvent;
 }

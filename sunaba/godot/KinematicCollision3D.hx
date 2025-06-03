@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.KinematicCollision3D")
 extern class KinematicCollision3D extends RefCounted {

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class NavigationAgent3DProcessMode {
     public static var Inherit: Int = 0;
@@ -86,10 +86,10 @@ extern class NavigationAgent3D extends Node {
     public function setNavigationLayerValue(layerNumber: Int, value: Bool): Void;
     public function setNavigationMap(navigationMap: RID): Void;
     public function setVelocityForced(velocity: GdVector3): Void;
-    public var linkReached: Event;
-    public var navigationFinished: Event;
-    public var pathChanged: Event;
-    public var targetReached: Event;
-    public var velocityComputed: Event;
-    public var waypointReached: Event;
+    public var linkReached: NativeEvent;
+    public var navigationFinished: NativeEvent;
+    public var pathChanged: NativeEvent;
+    public var targetReached: NativeEvent;
+    public var velocityComputed: NativeEvent;
+    public var waypointReached: NativeEvent;
 }

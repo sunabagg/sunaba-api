@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 class VisualShaderNodeVec3ParameterQualifier {
     public static var None: Int = 0;

@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.BoneMap")
 extern class BoneMap extends Resource {
@@ -10,6 +10,6 @@ extern class BoneMap extends Resource {
     public function findProfileBoneName(skeletonBoneName: StringName): StringName;
     public function getSkeletonBoneName(profileBoneName: StringName): StringName;
     public function setSkeletonBoneName(profileBoneName: StringName, skeletonBoneName: StringName): Void;
-    public var boneMapUpdated: Event;
-    public var profileUpdated: Event;
+    public var boneMapUpdated: NativeEvent;
+    public var profileUpdated: NativeEvent;
 }

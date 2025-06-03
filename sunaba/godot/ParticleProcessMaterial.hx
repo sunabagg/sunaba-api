@@ -1,6 +1,6 @@
 package sunaba.godot;
 
-import sunaba.core.Event;
+import sunaba.core.NativeEvent;
 
 @:native("godot.ParticleProcessMaterial")
 extern class ParticleProcessMaterial extends Material {
@@ -112,5 +112,5 @@ extern class ParticleProcessMaterial extends Material {
     public function setParamMin(param: Int, value: Float): Void;
     public function setParamTexture(param: Int, texture: Texture2D): Void;
     public function setParticleFlag(particleFlag: Int, enable: Bool): Void;
-    public var emissionShapeChanged: Event;
+    public var emissionShapeChanged: NativeEvent;
 }
